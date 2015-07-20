@@ -3,17 +3,18 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: Hexo
-subtitle:
-description:
-author: John Doe
-language:
+title: Laker's blog
+subtitle: 进击的程序媛
+description: 前端
+author: Laker Huang
+email: younglaker8@gmail.com
+language: zh-CN
 timezone:
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: http://yoursite.com
-root: /
+url: http://laker.me/blog
+root: /blog/
 permalink: :year/:month/:day/:title/
 permalink_defaults:
 
@@ -63,9 +64,47 @@ pagination_dir: page
 # Extensions
 ## Plugins: http://hexo.io/plugins/
 ## Themes: http://hexo.io/themes/
-theme: landscape
+theme: minos
 
 # Deployment
 ## Docs: http://hexo.io/docs/deployment.html
 deploy:
-  type:
+  type: git
+  repo: https://github.com/younglaker/blog.git
+  branch: gh-pages
+
+# Header
+menu:
+  Home: /blog
+  Archives: archives
+  Categories: categories
+  #Tags: tags
+  Blogrolls: blogrolls
+  About: about
+
+# Content
+excerpt_link: Read More
+fancybox: true
+
+# Miscellaneous
+google_analytics:
+favicon: /favicon.png
+
+# Archives
+#Archives 默认值为2,修改为1,Archives页面就只会列出标题,而非全文
+## 2: Enable pagination
+## 1: Disable pagination
+## 0: Fully Disable
+archive: 2
+category: 1
+tag: 1
+
+# 友言
+uyan:
+  enable: true
+
+# disqus
+#disqus_shortname: laker
+
+# baidu_tongji
+baidu_tongji: true

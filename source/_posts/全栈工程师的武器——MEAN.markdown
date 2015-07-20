@@ -1,0 +1,38 @@
+---
+layout: post
+title:  全栈工程师的武器——MEAN
+date:   2015-02-04 08:24:00
+category: [翻译,Full-Stack]
+---
+
+![clipboard.png](http://segmentfault.com/img/bVkNyo)
+
+JavaScript自1995年发布以来，走过了漫长的道路。已经有了几个主要版本的ECMAScript规范，单页Web应用程序也慢慢兴起，还有支持客户端的JavaScript框架。作为一个被绝大多数浏览器支持前台脚本语言，它对浏览器的创新做出了很大的贡献。JavaScript许多很有用的特点（它是无阻塞是，它是事件驱动的，很多程序员熟悉它）可以在浏览器之外的环境中加以利用。这推动了JavaScript社区新一轮的创新，让JavaScript能在服务器和数据库中运行。
+
+
+<!--more-->
+
+一下子，JavaScript工程师认为自己不只是“Web前端开发者”了。如果你对语言很熟悉，就可以自己搭建服务器和数据库。除了交互设计，开发者可以只用JavaScript就能做出一个完整的web应用，这在JavaScript史上是第一次。这种趋势被称为“全栈的JavaScript”或“纯JavaScript的解决方案”。它包含了JavaScript的四种流行技术：`MongoDB`、`Express`、`AngularJS`、和 `Node.js`。这四种技术越来越流行，它们合称为`MEAN Stack`。
+
+
+## MongoDB
+
+MongoDB也就是常说的NoSQL数据库。可以认为它是文档结构的数据库，而不是由行、列、表组成的数据库。基本的用法是存储JSON数据，这很适合JavaScript程序。它是非关系型、非事务要求严格的系统，所以它很快、可扩展性和易用性强。
+
+##Express
+Express是一个小型的web服务器框架，能使Node开发的web服务器更易开发和维护。Express有很高的定制性，它能简单快速地使用路由请求、cookie管理、一个静态文件服务器和很多企业级网络服务器所需要HTTP模块。
+
+##AngularJS 
+Angular是一个功能丰富的客户端MVC JavaScript框架。它可用于开发复杂的单页Web应用程序。它具有内置的双向数据绑定功能和它自己的基于HTML的模板。它有个特性称为“directives”，允许开发者给HTML拓展新属性、新元素。Angular也是高度可测试的，这是很重要的。Angular为开发客户端提供了公约和最佳解决方案。
+
+##Node
+Node基于JavaScript，用于建立服务器和网络应用。它提供所有JavaScript的特性，并外加文件操作、网络I/O的功能。它使用谷歌的V8引擎（与谷歌浏览器中使用的相同）来执行JavaScript。它拥有很活跃的开发者社区和Node模块生态圈（Express是其中一个模块）。虽有JavaScript有其他实现服务器端的方法，但Node是目前个人级和企业级最好的开发方案。
+
+如果你是JavaScript的粉丝，你应该会对只用JavaScript就能开发一个完整的web应用感到兴奋。MEAN Stack是一个很热门的话题，网上有很多关于学习它们的讨论，可以去尝试学习一下。
+
+> 英文原文 [Full Stack JavaScript Development With MEAN][1]
+
+> 本文是我为 [SegmentFault][2] 所译
+
+  [1]: http://www.sitepoint.com/full-stack-javascript-development-mean/#
+  [2]: http://segmentfault.com/blog/news/1190000002535492

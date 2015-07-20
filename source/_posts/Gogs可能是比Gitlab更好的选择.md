@@ -1,0 +1,269 @@
+---
+layout: post
+title:  Gogs：可能是比Gitlab更好的选择
+date:   2015-03-18 08:24:00
+category: [翻译,技术]
+---
+
+> 译者注：看到一篇介绍能简单自建git托管服务的项目—— Gogs ——的文章，感觉这个项目很棒，翻译给大家参考一下。
+这个项目的四位主要开发者都是中国人，该项目今天蝉联 GitHub Go 语言 Trending 第一。(づ￣3￣)づ莫名的自豪感油然而生。希望能有更多优秀的国产项目出现~
+
+[Gitlab][2]是一个很棒的Git托管服务，几乎像[GitHub][3]一样强大。 但是，有没有能和Gitlab/Github媲美但操作更简单的项目呢？我认为 [Gogs][4] 是很好的选择。
+
+<!--more-->
+
+##简介
+现在，GitHub已经成为首选的代码托管平台。 因为它又很多很棒的功能，操作简单，几乎所有的开发者都喜欢它。
+
+同时，[谷歌的代码托管项目准备关闭][5]，你可以把项目转移到这里。
+
+但如果你在写Android应用程序，或者正在创建下一个伟大的iOS游戏，或者不想让别人看到你的代码没，该怎么办？
+
+你当然可以购买私人GitHub库，但你肯定更想把资金投资到更紧迫的事情上。
+
+这就是 Gitlab 和 Gogs 这样的软件诞生的原因。
+
+他们提供的服务和GitHub非常相似，不同的是，你可以把项目放在你自己的服务器上，甚至是自己的工作站上。
+
+下面一起来进行更深入的了解。
+
+##Gitlab
+Gitlab是一个强大的git服务，基本功能和对手GitHub一样。 这是一个成熟的项目和并且在不断更新。
+
+
+![clipboard.png](http://segmentfault.com/img/bVk5Pp)
+
+
+他们最近收购了[Gitorius][6]（另一个类似GitHub的服务），所以功能将有望得到扩展（[查看有关收购的新闻剪辑][7]）。
+
+以前是手动安装，很耗时间，问题也很多。最近安装过程有所改善。
+
+现在有 Linux DEB／RPM 的安装包可用（称为Omnibus），解决了所有的依赖问题，简化了安装过程。
+
+升级是一个复杂的事情，尤其是从较早的版本升级到最新版，但也没那么复杂。
+
+然而，你可以感受到很多东西是在后台执行的。 你可以运行 Sidekiq、Unicorn、Nginx、Ruby (包括 gems) 和 Gitlab本身。
+
+自定义安装不是那么简单，有很多不确定因素，如果出了什么差错，要自己一个个排查。
+
+##输入二进制包
+现在，我们有了[Gogs][8]。 你所要做的就是运行一个的二进制包。
+
+它是用[Go][9]语言写的，能兼容各个系统。
+
+它能运行于 Windows，MAC，Linux，ARM 等。
+
+
+![clipboard.png](http://segmentfault.com/img/bVk5Pr)
+
+
+安装时只需要把压缩包解压到选定的文件夹中。 就是这样。 升级也一样：只要解压压缩包即可。
+
+这就是[Go语言二进制开发][10]的美，你可以轻松在多个平台下开发。
+
+Gogs占用资源少，所以它很容易在系统资源上运行（它可以在[Raspberry Pi][11]运行）。
+
+你可以用默认的配置运行，或做一些小调整。
+
+默认的配置文件位于安装文件夹的`/conf/app.ini`，文档建议把自定义配置写到`/custom/conf/app.ini`，这样升级就不会覆盖配置。
+
+有三个可自定义的东西：
+
+* 库的位置
+
+        [repository]
+        ROOT = !! 库的地址 !!
+
+* 数据库位置
+
+        [database]
+        PATH = !! 数据库地址 !!
+
+* 公钥
+
+![clipboard.png](http://segmentfault.com/img/bVk5Pt)
+
+
+注意：目前，你需要运行一个SSH服务器（OpenSSH也很好），这和gitlab相同。
+
+##比较
+让我们比较一下这两个产品。 我将以GitHub作为参考。
+|特性  |Gogs|Gitlab|Github|
+|--|--|
+|Dashboard & File Browser| Y | Y |Y  |
+|Issue Tracking, Milestones & Commit keywords| Y |Y  | Y |
+|Organizations support| N | Y | Y |
+|Wiki|N  | Y | Y |
+|Code Review|N  | Y | Y |
+|Code Snippets|N  |Y  |  Y|
+|Web Hooks| Y | Y | Y |
+|Git Hooks| Y | * Enterprise | * Enterprise |
+|LDAP Login| Y | Y |  Y|
+|LDAP Group Sync| N | * Enterprise | * Enterprise |
+|Branded Login Page| N | * Enterprise |  * Enterprise|
+|Language| Go        | Ruby | Ruby |
+|Platform| Cross-Platform       | Linux | * Virtual Machine |
+|License|  MIT  | MIT  | Proprietary |
+|Resource Usage| Low     |  Medium/High| Medium/High |
+
+
+
+
+
+代码审查（拉取请求）可以说是缺失的最重要的功能。 这是 Gogs 在[Github issues][12] 里首要问题，Gogs的主要开发者正在尽力开发中。
+
+但总的来说，这是一个功能丰富的、私有的Git托管服务。
+
+##运行一个 Gogs docker
+我[以前描述][13]我如何我的服务器环境docker化，所以我也会把gogs作为Docker容器来运行
+
+让我们一步一步来做。
+
+假设我有一个应用程序的文件在我的服务器根目录`/home/kayak/apps`，给每个作为Docker容器的应用创建子目录。
+
+下载并解压最新版本gogs。
+
+    $ cd /home/kayak/apps
+    $ wget http://gogs.dn.qbox.me/gogs_v0.5.13_linux_amd64.zip
+    $ unzip gogs_v0.5.13_linux_amd64.zip
+    $ rm gogs_v0.5.13_linux_amd64.zip
+
+自定义配置
+
+    $ cd gogs
+    $ mkdir -p custom/conf
+    $ cd custom/conf
+    $ nano app.ini
+    [repository]
+    ROOT = !! this is the location where you want to keep the repositories !!
+    
+    [database]
+    PATH = !! this is the location of your database (sqlite3 by default) !!
+
+注： 你也可以不把gogs作为docker容器，直接运行。
+
+现在让我们创建dockerfile
+
+    $ cd /home/kayak/apps/gogs
+    $ nano Dockerfile
+    
+    FROM ubuntu:14.04
+    
+    ENV DEBIAN_FRONTEND noninteractive
+    
+    RUN sed 's/main$/main universe multiverse/' -i /etc/apt/sources.list && \
+    	apt-get update && apt-mark hold initscripts && \
+    	apt-get install -y sudo openssh-server git && \
+    	apt-get clean
+    
+    EXPOSE 22 3000
+    
+    RUN addgroup --gid 501 kayak && adduser --uid 501 --gid 501 --disabled-password --gecos 'kayak' kayak && adduser kayak sudo
+    
+    WORKDIR /home/kayak
+    ENV HOME /home/kayak
+    
+    ENTRYPOINT ["/home/kayak/boot"]
+
+dockerfile是基于最新的Ubuntu LTS版服务器（14.04）。
+
+然后安装 sudo, openssh 和 git，暴露端口22（用于SSH）和3000（给gogs的Web界面）。
+
+另外，我通常会创建一个用户（这里用 kayak），它具有与我的Max box用户相同的UID/GID，以防止访问权限问题。
+
+最后，启动shell脚本运行。
+
+    $ touch boot
+    $ chmod +x boot
+    $ nano boot
+    #!/bin/bash
+    
+    sudo -u kayak -H touch /home/kayak/.ssh/authorized_keys
+    chmod 700 /home/kayak/.ssh && chmod 600 /home/kayak/.ssh/authorized_keys
+    
+    # start openssh server
+    mkdir /var/run/sshd
+    /usr/sbin/sshd -D &
+    
+    exec sudo -u kayak /home/kayak/gogs web
+
+这样就运行了ssh守护进程和gogs。现在是以kayak用户运行，这样比用默认的root用户好一些。
+
+建立镜像
+
+    $ cd /home/kayak/apps/gogs
+    $ docker build --rm -t apertoire/gogs .
+
+镜像建立好就可以运行了
+
+    $ docker run -d --name gogs \
+    -v /etc/localtime:/etc/localtime:ro \
+    -v /home/kayak/apps/gogs:/home/kayak \
+    -p 62723:22 \
+    -p 3000:3000 \
+    apertoire/gogs
+
+可以在命令行查看运行情况。
+
+
+![clipboard.png](http://segmentfault.com/img/bVk5R1)
+
+
+现在可以打开网页界面，它会显示一个安装页面（首次运行）。
+
+
+![clipboard.png](http://segmentfault.com/img/bVk5R2)
+
+
+安装完成后，就搭建好一个功能丰富的Gogs了。
+
+
+![clipboard.png](http://segmentfault.com/img/bVk5R3)
+
+
+##总结
+Gogs 是一个轻量级的、易于设置、跨平台的Git托管服务，不逊色于 Gitlab 和 GitHub。
+
+虽然不比这二者成熟，但它有很大的潜力。
+
+它是开源的，所以你可以帮助改善它。
+
+我用Gogs取代Gitlab几个月了，感觉不错。
+
+我创建42个库，感觉它的性能非常好。
+
+我绝对推荐Gogs作为你的Git自托管服务。
+
+
+##附该项目在Github上的4位开发者：
+
+| ![clipboard.png](http://segmentfault.com/img/bVk5U5)|![clipboard.png](http://segmentfault.com/img/bVk5U8) | ![clipboard.png](http://segmentfault.com/img/bVk5U9)|![clipboard.png](http://segmentfault.com/img/bVk5Uw)|
+|:--:|:--:|:--:|:--:|
+| [无闻Unknwon][14] | [Liu Peng][15] |  [Lunny Xiao][16]|[傅小黑][17]|
+
+----
+
+> 英文原文 [Gogs, an alternative to Gitlab][18]
+
+> 本文是我为[SegmentFault][19]所译
+
+
+  [1]: http://weibo.com/Obahua
+  [2]: https://gitlab.com/
+  [3]: https://github.com/
+  [4]: http://gogs.io/
+  [5]: http://arstechnica.com/information-technology/2015/03/google-to-close-google-code-open-source-project-hosting/
+  [6]: https://gitorious.org/
+  [7]: http://thenextweb.com/insider/2015/03/03/gitlab-acquires-rival-gitorious-will-shut-june-1/
+  [8]: http://gogs.io/
+  [9]: https://golang.org/
+  [10]: https://golang.org/
+  [11]: http://www.raspberrypi.org/
+  [12]: https://github.com/gogits/gogs/issues/5
+  [13]: http://www.apertoire.net/dockeritazion
+  [14]: http://weibo.com/Obahua#_rnd1426665680212
+  [15]: https://github.com/slene
+  [16]: http://weibo.com/xiaolunwen
+  [17]: http://weibo.com/fuxiaohei/
+  [18]: http://www.apertoire.net/gogs-an-alternative-to-gitlab/
+  [19]: http://segmentfault.com/blog/news/1190000002605142
