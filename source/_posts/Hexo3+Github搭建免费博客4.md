@@ -60,6 +60,10 @@ hexo会在部署的时候编译这个文件，所以我们要阻止编译，在�
 
     <%- partial('baidu_tongji') %>
 
+##RSS
+
+    npm install hexo-migrator-rss --save
+
 
   [1]: https://www.google.com/webmasters/tools/home?hl=zh-CN
   [2]: http://www.baidu.com/search/url_submit.htm
