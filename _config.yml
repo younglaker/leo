@@ -81,6 +81,7 @@ menu:
   #Tags: tags
   Blogrolls: blogrolls
   About: about
+  RSS: atom.xml
 
 # Content
 excerpt_link: Read More
@@ -108,3 +109,9 @@ uyan:
 
 # baidu_tongji
 baidu_tongji: true
+
+# plugins:  
+#   - hexo-generator-feed
+
+rss: true
+

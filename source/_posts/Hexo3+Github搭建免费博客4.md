@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Hexo3+Github搭建免费博客（四）SEO、统计
+title:  Hexo3+Github搭建免费博客（四）SEO/统计/RSS
 date:   2015-07-16 08:24:00
 category: [Hexo]
 ---
@@ -61,8 +61,35 @@ hexo会在部署的时候编译这个文件，所以我们要阻止编译，在�
     <%- partial('baidu_tongji') %>
 
 ##RSS
+在根目录下安装`hexo-generator-feed`依赖：
 
-    npm install hexo-migrator-rss --save
+    npm install hexo-generator-feed --save
+
+本主题已经在`head.ejs`里定义了以下代码，使用其他主题的请看主题是如何定义的，或者也这样做：
+
+    <% if (theme.rss){ %>
+        <link rel="alternative" href="<%- theme.rss %>" title="<%= config.title %>" type="application/atom+xml">
+    <% } %>
+
+部署：
+    
+    hexo g
+
+部署成功后会在source文件夹里出现`atom.xml`。
+
+在`_config.yml`里：
+
+    rss: true
+
+    menu:
+      Home: /blog
+      Archives: archives
+      Categories: categories
+      Blogrolls: blogrolls
+      About: about
+      RSS: atom.xml #加上这个
+      
+就会在菜单上出现RSS的链接了。
 
 
   [1]: https://www.google.com/webmasters/tools/home?hl=zh-CN
