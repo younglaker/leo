@@ -1,11 +1,12 @@
 ---
 layout: post
-title:  BeX5学习笔记（一）建模过程
+title:  BeX5快速建站工具（一）建模过程
 date:   2015-07-27 08:24:00
 category: [ERP,BeX5]
+tags: [ERP,BeX5,Web,HTML5,BootStrap]
 ---
 
-最近公司要开发ERP系统，看中这个开发工具，所以学习一下。
+最近公司要开发ERP系统，看中这个开发工具，而且采用响应式布局，用户社区也蛮活跃的，感觉不错，所以学习一下。
 
 ## 关于
 

@@ -1,0 +1,64 @@
+---
+layout: post
+title:  BeX5快速建站工具（二）界面建模(规则)
+date:   2015-07-29 08:24:00
+category: [ERP,BeX5]
+tags: [ERP,BeX5,Web,HTML5,BootStrap]
+---
+
+
+## 输入与输出的关系
+在上一篇文章中做出的物品信息维护界面中，列表中“物品编码”有个`ref`属性：
+
+![显示][2]
+
+<!--more-->
+
+对应输入框有个`bind-ref`属性的值绑定了物品编码的`ref`：
+
+![填表][3]
+
+红色方框里书界面控件的列表树。例如，两个红色椭圆圈的对应关系：
+
+![控件的列表树][4]
+
+标签名使用`label`方法获取:
+
+![此处输入图片的描述][5]
+
+##设置宽度
+本框架采用BootStrap CSS框架，对我来说再熟悉不过了，详细可以参考[它的中文站点][6]。
+
+在BeX5框架里，每个元素宽度为100%，在它外面有个控制宽度的元素叫`coln`，用来控制宽度。给外面的元素设置`class`就能控制大小。这里的响应式设计吧屏幕分成12份，所以在同一行上的元素总宽度要加成12。
+
+例如：
+
+标签外有个`col11`，有个clss`col-sm-2`，意味着在768px以上大小的屏幕里，它占2/12份。
+
+![设置宽度][7]
+
+所以，和它在同一行的input就是`col-sm-10`：
+
+![此处输入图片的描述][8]
+
+##设置必填项
+
+选中“物品名称”的`input` -> 右键对应的`mainData` -> 编辑规则
+
+![设置必填项][9]
+
+选中“物品名称”  -> 在必填项里写上"true"和提示语：
+
+![设置必填项][10]
+
+
+  [1]: http://laker.me/blog
+  [2]: http://77g54f.com1.z0.glb.clouddn.com/QQ20150728145154.png?imageView2/1/q/100|watermark/1/image/aHR0cDovLzc3ZzU0Zi5jb20xLnowLmdsYi5jbG91ZGRuLmNvbS9sYWtlcjMucG5n/dissolve/100/gravity/SouthEast/dx/5/dy/5
+  [3]: http://77g54f.com1.z0.glb.clouddn.com/QQ20150728145304.png?imageView2/1/q/100|watermark/1/image/aHR0cDovLzc3ZzU0Zi5jb20xLnowLmdsYi5jbG91ZGRuLmNvbS9sYWtlcjMucG5n/dissolve/100/gravity/SouthEast/dx/5/dy/5
+  [4]: http://77g54f.com1.z0.glb.clouddn.com/QQ20150728150401.png?imageView2/1/q/100|watermark/1/image/aHR0cDovLzc3ZzU0Zi5jb20xLnowLmdsYi5jbG91ZGRuLmNvbS9sYWtlcjMucG5n/dissolve/100/gravity/SouthEast/dx/5/dy/5
+  [5]: http://77g54f.com1.z0.glb.clouddn.com/QQ20150728162607.png?imageView2/1/q/100|watermark/1/image/aHR0cDovLzc3ZzU0Zi5jb20xLnowLmdsYi5jbG91ZGRuLmNvbS9sYWtlcjMucG5n/dissolve/100/gravity/SouthEast/dx/5/dy/5
+  [6]: http://www.bootcss.com/
+  [7]: http://77g54f.com1.z0.glb.clouddn.com/QQ20150728164057.png?imageView2/1/q/100|watermark/1/image/aHR0cDovLzc3ZzU0Zi5jb20xLnowLmdsYi5jbG91ZGRuLmNvbS9sYWtlcjMucG5n/dissolve/100/gravity/SouthEast/dx/5/dy/5
+  [8]: http://77g54f.com1.z0.glb.clouddn.com/QQ20150728165114.png?imageView2/1/q/100|watermark/1/image/aHR0cDovLzc3ZzU0Zi5jb20xLnowLmdsYi5jbG91ZGRuLmNvbS9sYWtlcjMucG5n/dissolve/100/gravity/SouthEast/dx/5/dy/5
+  [9]: http://77g54f.com1.z0.glb.clouddn.com/QQ20150728151735.png
+  [10]: http://77g54f.com1.z0.glb.clouddn.com/QQ20150728152046.png?

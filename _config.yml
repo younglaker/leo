@@ -85,7 +85,7 @@ menu:
 
 # Content
 excerpt_link: Read More
-fancybox: true
+fancybox: false
 
 # Miscellaneous
 google_analytics:
@@ -110,8 +110,8 @@ uyan:
 # baidu_tongji
 baidu_tongji: true
 
-# plugins:  
+#plugins:  
 #   - hexo-generator-feed
+#  - hexo-qiniu-sync
 
 rss: true
-
