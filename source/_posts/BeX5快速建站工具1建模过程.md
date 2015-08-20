@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  BeX5快速建站工具（一）建模过程
-date:   2015-07-27 08:24:00
+date:   2015-07-28 08:24:00
 category: [ERP,BeX5]
 tags: [ERP,BeX5,Web,HTML5,BootStrap]
 ---
