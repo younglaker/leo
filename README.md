@@ -21,7 +21,7 @@
 * 切换项目到主地址
 * Favicon
 
-##to-do list 
+##To-do list 
 
 * -博客样式-
 * -blockquote、list的样式-
@@ -42,7 +42,7 @@
 * 文章配图
 * 文章内的目录
 * 同时部署github gitcafe
-* 底部信息
+* -底部信息-
 * -转载要求-
 * -home的链接-
 * -回到顶部-

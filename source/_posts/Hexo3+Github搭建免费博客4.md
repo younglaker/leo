@@ -91,6 +91,35 @@ hexo会在部署的时候编译这个文件，所以我们要阻止编译，在�
       
 就会在菜单上出现RSS的链接了。
 
+> 2015-9-9 更新：
+
+今天用freedly订阅博客RSS时，发现地址错误，检查了atom.xml文件，发现博客地址是`http://laker.me/blog/blog//`，而正确的应该是`http://laker.me/blog/`，估计是解析器的问题，因为在config文件里，要求url把子目录写上即`http://laker.me/blog/`，并填写子目录`/blog/`。到插件主页看了，最近有人也遇到这个问题，并进行了更新，但是好像全部换了写法，要升级有点麻烦，我就直接自己改了配置：
+
+在`\node_modules\hexo-generator-feed\atom.ejs`里，把URL的定义（大约第三行：）
+
+    <% var url = config.url + config.root %>
+
+改为：
+
+    <% var url = config.url + '/'%>
+
+把大概第六行
+
+    <link href="<%- encodeURI(feed_url) %>" rel="self"/>
+
+最后的`/`删掉，因为和上面 url 的定义重复了：
+
+    <link href="<%- encodeURI(feed_url) %>" rel="self">
+
+重新编译后即可。
+
+题外话，`feed_url`的定义在`\node_modules\hexo-generator-feed\lib\generator.js`里，有需要可以进行更改：
+
+    var xml = template({
+      config: config,
+      posts: posts,
+      feed_url: config.root + feedConfig.path
+    });
 
   [1]: https://www.google.com/webmasters/tools/home?hl=zh-CN
   [2]: http://www.baidu.com/search/url_submit.htm

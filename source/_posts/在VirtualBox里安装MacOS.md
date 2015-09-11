@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  在 VirtualBox 里安装Mac OS X 10.9 Mavericks
+title:  在windows(VirtualBox)里安装MacOS
 date:   2015-07-23 08:24:00
 category: [Mac]
 ---
