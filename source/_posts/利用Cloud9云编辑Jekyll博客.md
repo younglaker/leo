@@ -11,13 +11,13 @@ category: [Jekyll]
 
 ##关于 Cloud 9
 
-[管网][3]
+[官网][3]
 
 Cloud9支持的程序语言有Node.js、HTML5、PHP、Python / Django、Ruby on Rails、C/C++、StrongLoop等，提供FTP、S-S-H和空间托管，有MysqL、MongoDB、SQLite数据库，可以一键安装Wordpress，也可以自己上传程序代码，支持协同编辑合作，另外可以和其它的云空间整合。
 
 Cloud9支持将代码一键发布到Heroku、Windows Azure、Google App Engine、CloudFoundry等云空间上，还可以同步应用到Github空间上。
 
-支持sublime风格，还有常用输入习惯配置“
+支持sublime风格，还有常用输入习惯配置：
 
 ![编辑器风格][4]
 
