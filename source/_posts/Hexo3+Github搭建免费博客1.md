@@ -174,9 +174,26 @@ cd到项目文件夹
       type: git #不要写github,写git
       repo: https://github.com/younglaker/blog.git
       branch: gh-pages
-    
+
+注意：  
+1、
 > [升级到hexo 3.0后deploy type: github选项无效][8]
 
+2、
+> deploy 报错 ：fatal: could not read Username for 'https://github.com': Invalid argument
+
+如果按照github设置username没有问题，那就把部署地址改为SSH形式：
+
+    deploy:
+      type: git
+      repo: git@github.com:younglaker/blog.git
+      branch: gh-pages
+
+参考： 
+[Error when push commits with Github: fatal: could not read Username][9]
+[Github configuration question / problem][10]
+[sublime-text-git，fatal: could not read Username for 'https://github.com': Device not configured ][11]
+[Git push requires username and password][12]
 
 ###生成静态页面
 
@@ -198,7 +215,7 @@ cd到项目文件夹
 
 浏览器访问 http://localhost:4000 就可以看到效果。
 
-![图片描述][9]
+![图片描述][13]
 
 ###上传到github
 
@@ -232,4 +249,8 @@ hexo就会帮你完成上传工作，不用自己执行add、commit、push等一
   [6]: http://www.macports.org/
   [7]: http://sourceforge.net/projects/git-osx-installer/
   [8]: https://github.com/hexojs/hexo/issues/1013
-  [9]: http://segmentfault.com/img/bVmEEP
+  [9]: http://stackoverflow.com/questions/20871549/error-when-push-commits-with-github-fatal-could-not-read-username
+  [10]: https://github.com/hexojs/hexo/issues/857
+  [11]: https://github.com/kemayo/sublime-text-git/issues/176
+  [12]: http://stackoverflow.com/questions/6565357/git-push-requires-username-and-password
+  [13]: http://segmentfault.com/img/bVmEEP
