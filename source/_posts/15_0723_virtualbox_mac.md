@@ -118,11 +118,7 @@ category: [Mac]
 
 ![clipboard.png](http://segmentfault.com/img/bVmNK2)
 
-重新启动，选择菜单中的设备——分配光驱——OSXMavericks2.iso（没有就选择打开文件寻找），按 F5 
-
-![clipboard.png](http://segmentfault.com/img/bVmNLi)
-
-选择 Mavericks，回车
+重新启动，不用再换光驱了，方向键选择 Mavericks，回车
 
 
 ![clipboard.png](http://segmentfault.com/img/bVmNLA)

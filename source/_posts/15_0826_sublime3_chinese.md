@@ -1,9 +1,9 @@
 ---
 layout: post
-title:  sublime3 中文文件夹乱码解决方案
+title:  Sublime3 中文文件夹乱码解决方案
 date:   2015-08-26 08:24:00
-category: [sublime]
-tags: [sublime]
+category: [Sublime]
+tags: [Sublime]
 ---
 
 本人使用的版本是sublime 3 build 3065。文件树和标签的中文会乱码。

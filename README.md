@@ -1,3 +1,21 @@
+##效果预览
+http://laker.me/blog/
+
+##使用
+###从0开始搭建Hexo博客
+
+- clone本项目到你的github，开启项目Pages服务（项目设置——开启Pages服务）
+- 把项目clone到本地，执行`npm install`安装本主题需要的node包
+- 删除`source > post`里面所有文章，把你的Markdown文章存到这里
+- 修改`_config.yaml`里面的配置，主要有博客信息、Github地址
+- 在本地安装hexo，执行`hexo server`命令调试无误后，执行`hexo g`、`hexo d`编译后上传Github，即可在线看到博客
+
+###复制主题
+本主题文件目录在`themes--leo`，复制到你的主题目录下，在`_config.yaml`改用leo主题
+
+    ## Themes: http://hexo.io/themes/
+    theme: leo
+
 ##Done
 ###2015.7.20
 
@@ -21,31 +39,30 @@
 * 切换项目到主地址
 * Favicon
 
-##To-do list 
+##To-do list
 
-* -博客样式-
-* -blockquote、list的样式-
-* -评论-
-* -友情链接面-
-* -logo-
-* -切换项目到主地址-
-* -Favicon-
-* -支付宝微信-
-* 时间轴
-* -统计-
-* -about页面优化-
-* 404
-* 分享
-* -RSS-
-* 云编辑器
-* -图片云存储-
-* 文章配图
-* 文章内的目录
-* 同时部署github gitcafe
-* -底部信息-
-* -转载要求-
-* -home的链接-
-* -回到顶部-
-* -提交搜索引擎-
-* SEO优化
-* about页面社交网络图标、地址
+- [ ] 时间轴
+- [ ] 404
+- [ ] 分享
+- [ ] 云编辑器
+- [ ] 文章内的目录
+- [ ] SEO优化
+- [ ] about页面社交网络图标、地址
+- [x] 博客样式
+- [x] blockquote、list的样式
+- [x] 评论
+- [x] 友情链接面
+- [x] logo
+- [x] 切换项目到主地址
+- [x] Favicon
+- [x] 支付宝微信
+- [x] 统计
+- [x] about页面优化
+- [x] RSS
+- [x] 底部信息
+- [x] 转载要求
+- [x] home的链接
+- [x] 回到顶部
+- [x] 提交搜索引擎
+- [x] 同时部署github gitcafe
+- [x] 图片云存储
