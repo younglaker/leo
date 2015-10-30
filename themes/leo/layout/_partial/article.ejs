@@ -1,0 +1,69 @@
+<article id="<%= post.layout %>-<%= post.slug %>" class="article article-type-<%= post.layout %>" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    <%- partial('post/gallery') %>
+    <% if (post.link || post.title){ %>
+      <header class="article-header">
+        <%- partial('post/title', {class_name: 'article-title'}) %>
+      </header>
+    <% } %>
+    <div class="article-meta">
+      <%- partial('post/date', {class_name: 'article-date', date_format: null}) %>
+      <%- partial('post/category') %>
+      <% if (post.comments && config.disqus_shortname){ %>
+        <div class="article-comment-link-wrap">
+          <a href="<%- post.permalink %>#disqus_thread" class="article-comment-link"><%= __('article.comments') %></a>
+        </div>
+      <% } %>
+    </div>
+    <div class="article-entry" itemprop="articleBody">
+      <% if (post.excerpt && index){ %>
+        <%- post.excerpt %>
+        <% if (theme.excerpt_link){ %>
+          <p class="article-more-link">
+            <a href="<%- url_for(post.path) %>#more"><%= theme.excerpt_link %></a>
+          </p>
+        <% } %>
+      <% } else { %>
+        <%- post.content %>
+        <hr>
+        <div class="copyright"> 
+          <a href="<%- post.permalink %>"><%- page.title %></a>
+          <!--%- partial('post/title', {class_name: 'archive-article-title'}) %-->
+          <p>本文原创自<a href="http://laker.me/blog">Laker's Blog</a>，转载请注明出处，欢迎交换友链</p>
+          <p>如果本文对您有帮助，微信扫一扫，请我喝杯咖啡吧</p>
+          <p><img src="http://77g54f.com1.z0.glb.clouddn.com/weixinpay.jpg"></p>
+        </div>        
+      <% } %>
+    </div>
+  <% if (!index || post.tags.length){ %>
+    <footer class="article-footer">
+      <%- partial('post/tag') %>
+    </footer>
+  <% } %>
+  </div>
+  <% if (!index){ %>
+    <%- partial('post/nav') %>
+  <% } %>
+</article>
+
+<% if (!index && post.comments && config.disqus_shortname){ %>
+<section id="comments">
+  <div id="disqus_thread">
+    <noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+  </div>
+</section>
+<% } %>
+
+<% if (config.uyan.enable && page.comments){ %>
+
+<section id="comment">
+  <h1 class="title"><%= __('comment') %></h1>
+  <div id="disqus_thread">
+    <!-- UY BEGIN -->
+    <div id="uyan_frame"></div>
+    <script type="text/javascript" src="http://v2.uyan.cc/code/uyan.js?uid=1672779"></script>
+    <!-- UY END -->
+  </div>
+</section>
+
+<% } %>

@@ -1,0 +1,16 @@
+<footer id="footer">
+  <% if (theme.sidebar === 'bottom'){ %>
+    <%- partial('_partial/sidebar') %>
+  <% } %>
+  <div class="outer">
+    <!--div id="footer-info" class="inner">
+      &copy; <%= date(new Date(), 'YYYY') %> <%= config.author || config.title %>&nbsp;
+      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>, theme by <a href="http://github.com/ppoffice">PPOffice</a>
+    </div-->
+    <div id="footer-info" class="inner">
+      &copy; <%= date(new Date(), 'YYYY') %> <%= config.author || config.title %>&nbsp; <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="知识共享许可协议" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/80x15.png" /></a>     
+    </div>
+  </div>
+  
+
+</footer>
