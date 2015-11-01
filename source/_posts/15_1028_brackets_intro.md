@@ -6,7 +6,7 @@ category: [Brackets]
 tags: [Brackets,前端工具,开发工具,front-end]
 ---
 
-##关于
+## 关于
 Brackets 号称是懂web设计的开源编辑器。之所以这样说，是因为它是为前端工程师准备的，在前端开发方面做了很多特别设计。比如 开源子啊HTML里面直接跨文件编辑标签所涉及的CSS、PSD生成web文件、实时预览等。
 
 该项目由Adobe创建和维护，并在[Github上开源][1]。
@@ -45,7 +45,7 @@ Brackets 号称是懂web设计的开源编辑器。之所以这样说，是因�
 ### 文件地址提示
 ![文件地址提示][5]
 
-###图片预览
+### 图片预览
 HTML：
 
 ![图片预览][6]
@@ -55,7 +55,7 @@ Markdown：
 ![图片预览][7]
 
 ## 主题
-###更换主题
+### 更换主题
 在网上找的你喜欢的主题，我用的是一个基于 Sublime Monokai 的主题。GIthub 的地址是 `https://github.com/Brackets-Themes/Monokai`。
 
 有几种方法添加：

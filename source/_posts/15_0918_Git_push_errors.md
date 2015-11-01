@@ -10,11 +10,11 @@ tags: [Git]
 
 <!--more-->
 
-##fatal: could not read Username for 'https://github.com': Invalid argument
+## fatal: could not read Username for 'https://github.com': Invalid argument
 
 无法识别设置的github用户名。
 
-###原因
+### 原因
 根据[StackOverflow][1]上的讨论，据说是1.8.5的BUG，但是我现在用到2.5.2了还是会出现这样问题。不过解决方案是可用的。
 
 其他参考： 
@@ -23,7 +23,7 @@ tags: [Git]
 [sublime-text-git，fatal: could not read Username for 'https://github.com': Device not configured ][4]
 [Git push requires username and password][5]
 
-###方案一
+### 方案一
 
 检查是否进行的Git设置，[详情][6]
 
@@ -31,14 +31,14 @@ tags: [Git]
     git config --global user.email "YOUR EMAIL ADDRESS"
 
 
-###方案二
+### 方案二
 确保用户名正确的情况还是报错，就把HTTPS改为SSH方式连接，例如：
 
     [branch "gh-pages"]
     	remote = git@github.com:younglaker/blog.git
     	merge = refs/heads/gh-pages
 
-##fatal: Could not read from remote repository.
+## fatal: Could not read from remote repository.
 
 
     fatal: Could not read from remote repository.

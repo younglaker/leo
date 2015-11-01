@@ -17,9 +17,9 @@ category: [Mac]
 
 <!--more-->
 
-##安装
+## 安装
 
-###配置虚机
+### 配置虚机
 ![clipboard.png](http://segmentfault.com/img/bVmNKs)
 
 至少2048M
@@ -53,7 +53,7 @@ category: [Mac]
 
 ![clipboard.png](http://segmentfault.com/img/bVmNK2)
 
-###安装
+### 安装
 开启虚机
 
 ![clipboard.png](http://segmentfault.com/img/bVmNK3)
@@ -148,7 +148,7 @@ category: [Mac]
 
 ##一些必要设置
 
-###设置输入法中英文切换
+### 设置输入法中英文切换
 
 我的习惯是把设为`ctrl+space`。由于冲突，所以先把spotlight设为`ctrl+f`：
 
@@ -159,12 +159,12 @@ category: [Mac]
 
 ![clipboard.png](http://segmentfault.com/img/bVmNHm)
 
-###设置可安装非App Store
+### 设置可安装非App Store
 设置->安全与隐私
 
 ![clipboard.png](http://segmentfault.com/img/bVmNHE)
 
-##免除从 HackBoot_Mav.iso启动
+## 免除从 HackBoot_Mav.iso启动
 用safati下载 http://pan.baidu.com/s/1hqixcZq 安装：
 
 

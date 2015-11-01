@@ -22,13 +22,13 @@ Messenger 是一个消息框库，以良好的界面和交互效果给用户提�
 
 ![clipboard.png](http://segmentfault.com/img/bVk4nA)
 
-##[Flat UI Free 2.2][4]
+## [Flat UI Free 2.2][4]
 
 ![clipboard.png](http://segmentfault.com/img/bVk4nC)
 
 Flat UI Free是由一个很受欢迎的设计师资源网 Messenger  开发的扁平化 UI 库。 项目库已更新到2.2版本。 支持Twitter 的 Bootstrap，还有很多的新元素和字体。 这个项目在GitHub上得到了超过9000个星。
 
-##[Framer][5]
+## [Framer][5]
 
 ![clipboard.png](http://segmentfault.com/img/bVk4nB)
 
@@ -39,7 +39,7 @@ Flat UI Free是由一个很受欢迎的设计师资源网 Messenger  开发的
 ![clipboard.png](http://segmentfault.com/img/bVk4oh)
 
 
-##[BlendMeIn][7]
+## [BlendMeIn][7]
 
 
 ![clipboard.png](http://segmentfault.com/img/bVk4nD)
@@ -47,12 +47,12 @@ Flat UI Free是由一个很受欢迎的设计师资源网 Messenger  开发的
 它提供许多Photoshop和Illustrator的图标包，是个免费的插件。
  （译者注：此插件已经停止更新，作者推荐这样的方法：https://helpx.adobe.com/creative-cloud/how-to/assets-get-started.ht）
 
-##[Editr][8]
+## [Editr][8]
 ![clipboard.png](http://segmentfault.com/img/bVk4nE)
 
 你可以自己组装像 CodePen、JSFiddle 那样的 HTML、CSS 和 JavaScript  的 实时编辑器。 这是个基于 ACE Editor 的高质量、界面漂亮的工具。 功能包括：代码验证，支持Emmet，64编码，LESS、CofeeScript 等语言，还有很多主题皮肤供选择。
 
-##[Responsive elements][9]
+## [Responsive elements][9]
 
 ![clipboard.png](http://segmentfault.com/img/bVk4nT)
 
@@ -62,7 +62,7 @@ Flat UI Free是由一个很受欢迎的设计师资源网 Messenger  开发的
     
     .quote.gt150.lt300 {background: red} /* min
 
-##[Trunk][10]
+## [Trunk][10]
 
 这个jQuery插件可以帮助创建自适应的菜单。 项目主页有很棒的Demo会让你很想尝试一下。
 

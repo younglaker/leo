@@ -49,7 +49,7 @@ Wget:
 
     $ nvm install 0.10
 
-###安装git
+###  安装git
 
 Windows：下载并安装 [git][4].
 Mac：使用 [Homebrew][5], [MacPorts][6] 或下载 [安装程序][7] 安装。
@@ -66,7 +66,7 @@ Linux (Fedora, Red Hat, CentOS)：sudo yum install git-core
 ### 安装各种依赖
 **切换到项目目录安装依赖**（我第一次尝试的时候没有切换的项目文件夹，所以一直运行不了，切记！这使得项目多了就很麻烦），复制下面命令安装吧。不懂为什么要独立这几个出来，都是必须的。
 
-###安装生成器
+### 安装生成器
 这些用于生成博客目录，hexo文件很多，但是有个叫public的，这才是要上传到github的，也就是generator生成的。
 
 	npm install hexo-generator-index --save
@@ -74,12 +74,12 @@ Linux (Fedora, Red Hat, CentOS)：sudo yum install git-core
 	npm install hexo-generator-category --save
 	npm install hexo-generator-tag --save
 
-###安装hexo-server
+### 安装hexo-server
 本地运行必须
 
 	npm install hexo-server --save
 
-###安装发布器
+### 安装发布器
 发布到远程服务要用的，如果只要托管到github，所以必须装git，其他可以不装。
 
 	npm install hexo-deployer-git --save
@@ -87,7 +87,7 @@ Linux (Fedora, Red Hat, CentOS)：sudo yum install git-core
 	npm install hexo-deployer-rsync --save
 	npm install hexo-deployer-openshift --save
 
-###安装依赖
+### 安装依赖
 
     npm install
 
@@ -114,14 +114,14 @@ Linux (Fedora, Red Hat, CentOS)：sudo yum install git-core
 
 把里面的内容都删掉，待会创建hexo博客
 
-##本地部署
+## 本地部署
 
 cd到项目文件夹
 
     hexo init
 
 
-###目录介绍
+### 目录介绍
 
 
     ├── .deploy_git 执行hexo deploy命令部署到GitHub上的内容目录
@@ -195,7 +195,7 @@ cd到项目文件夹
 [sublime-text-git，fatal: could not read Username for 'https://github.com': Device not configured ][11]
 [Git push requires username and password][12]
 
-###生成静态页面
+### 生成静态页面
 
     hexo generate
     
@@ -205,7 +205,7 @@ cd到项目文件夹
 
 就会根据`source`文件夹的内容生成`public`文件夹，把md文章转换成html。`public`文件夹也就是要上传到github的东西，其他都会被ignore，所以在Github上看是很简洁的，这点比 jekyll 好。
 
-###打开服务
+### 打开服务
 
     hexo server
     
@@ -217,7 +217,7 @@ cd到项目文件夹
 
 ![图片描述][13]
 
-###上传到github
+### 上传到github
 
     hexo deploy
 

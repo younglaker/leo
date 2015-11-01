@@ -53,11 +53,11 @@ category: [翻译,HTML5]
     });
     </script>
 
-##规范
+## 规范
 
 Page Visibility API的规范很简单，只有两个方法：`document.hidden` 根据浏览器窗口的状态返回 `true` 或 `false`。具体的状态存储在`document.visibilityState`（`hidden` 、 `visible`、`prerender`、`unloaded`）里。`visibilitychange`可以作为一个事件。`document.visibilityState`可以检测为什么document不可见。但是`document.hidden`已经能满足大部分的需求。
 
-##注意事项和浏览器支持
+## 注意事项和浏览器支持
 
 Page Visibility API采用保守的方式来报告document的隐藏：如果用户在同一浏览器窗口里切换就会报告，但如果是用别的窗口遮住当前页面，就不会报告。这个API不是万无一失的，在某些情况下会误报，使用的时候要小心。
 
@@ -65,7 +65,7 @@ Page Visibility API采用保守的方式来报告document的隐藏：如果用�
 
 Page Visibility API是Progressive Enhancement（渐进增强）的一个好例子。如果浏览器不支持这个API，该脚本将被忽略，用户将像平时一样被不受控制的声音打扰。
 
-##其他用法
+## 其他用法
 
 Page Visibility API不仅可以用于声音和视频，还可以用于slider 、 PPT。
 

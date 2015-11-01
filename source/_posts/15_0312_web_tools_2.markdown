@@ -6,7 +6,7 @@ category: [翻译,工具]
 ---
 看到一个很棒的系列，介绍了很多对web开发很有帮助的利器，解决了很多开发中遇到的繁琐事，翻译来分享一下：
 
-##[Webflow][1]
+## [Webflow][1]
 
 ![clipboard.png](http://segmentfault.com/img/bVk2Cu)
 
@@ -16,7 +16,7 @@ category: [翻译,工具]
 
 <!--more-->
 
-##[Parallax.js][5]
+## [Parallax.js][5]
 
 ![clipboard.png](http://segmentfault.com/img/bVk2Da)
 
@@ -49,13 +49,13 @@ category: [翻译,工具]
     var scene = document.getElementById('scene');
     var parallax = new Parallax(scene);
 
-##[Intention.js][6]
+## [Intention.js][6]
 
 很小，但很有用的库，简化了创建完全自适应布局的开发过程。 用起来很简单。 操作原理如图所示：
 
 ![clipboard.png](http://segmentfault.com/img/bVk2CB)
 
-##[Device.js][7]
+## [Device.js][7]
 
 ![clipboard.png](http://segmentfault.com/img/bVk2Db)
 
@@ -63,13 +63,13 @@ category: [翻译,工具]
 
 谈到跨设备开发，我想提及 [Risizer][8] -响应设计测试的工具。 有很多类似的服务，但是我认为这种方法是最方便的。
 
-##[GistBox][9]
+## [GistBox][9]
 
 GistBox能同步你的Github 的 Gist。 可以通过标签排序，管理方便，随时查看。 它是一个Chrome扩展。
 
 ![clipboard.png](http://segmentfault.com/img/bVk2CW)
 
-##[CSS Modal][10]
+## [CSS Modal][10]
 
 ![clipboard.png](http://segmentfault.com/img/bVk2Dd)
 
@@ -90,7 +90,7 @@ GistBox能同步你的Github 的 Gist。 可以通过标签排序，管理方�
 
 然后在`body`的结束标记之前添加modal.js。 这是完成了！
 
-##Dotdotdot.js, Uikit, HTML2PDF
+## Dotdotdot.js, Uikit, HTML2PDF
 
 最近，我需要用省略号来表明有更多的文字。 但标准文本溢出只能在一句中。 我发现一个好脚本[dotdotdot.js][11]，它完美地解决了这个问题。
 

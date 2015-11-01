@@ -6,8 +6,8 @@ category: [Hexo]
 comments: true
 ---
 
-##增加第三方评论工具
-###友言
+## 增加第三方评论工具
+### 友言
 据说多说问题很多，从hexo2升级到hexo3无法同步评论，界面也不好看，所以选了友言。
 
 在`_config.yml`里添加：
@@ -38,7 +38,7 @@ comments: true
 
 ![clipboard.png](http://segmentfault.com/img/bVmGA7)
 
-###Disqus
+### Disqus
 
 到[官网][5]注册账号。右上角`admin`
 

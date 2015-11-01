@@ -21,7 +21,7 @@ category: [SQL]
         where a.yewuyuan = b.id
         and a.Month>201412
 
-###查询临时表的数据 
+### 查询临时表的数据 
 
     select [字段1,字段2,...,] from #临时表表名
     
@@ -31,8 +31,8 @@ category: [SQL]
 
 如果把现在的查询窗口关闭了，在重新打开，然后在在查询里输入，则会进行报错，提示 #tmp 无效。因为本地临时表只是用在当前用户的当前连接中。所以如果当前的连接退出，会自动销毁。
 
-##方法二
-###先建立临时表 
+## 方法二
+### 先建立临时表 
 
     create table #临时表名(
     字段1 约束条件,
@@ -47,7 +47,7 @@ category: [SQL]
      )
 
 
-###再插入资料
+### 再插入资料
 
     insert into #临时表名 select ...
     insert into #临时表名 values()
@@ -64,7 +64,7 @@ category: [SQL]
     insert into #tmp select 001, 'Mike'
     insert into #tmp values(002, 'Nick')
 
-##其他
-###删除临时表 
+## 其他
+### 删除临时表 
 
     drop table #临时表表名

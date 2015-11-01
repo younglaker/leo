@@ -9,7 +9,7 @@ category: [Jekyll]
 
 <!--more-->
 
-##关于 Cloud 9
+## 关于 Cloud 9
 
 [官网][3]
 
@@ -21,12 +21,12 @@ Cloud9支持将代码一键发布到Heroku、Windows Azure、Google App Engine�
 
 ![编辑器风格][4]
 
-##新建工作空间
+## 新建工作空间
 这里提供多种开发模板，我们此次选择Custom：
 
 ![预览][6]
 
-## 安装Jekyll
+##  安装Jekyll
 
 打开terminal（快捷键alt+t，或者菜单---window---newterminal），输入：
 
@@ -60,7 +60,7 @@ coffee安装好之后就可以运行Jekyll了。
 
 ![预览][5]
 
-##使用博客模板
+## 使用博客模板
 
 Cloud 9已结安装好Git，可以直接用。找到你喜欢的博客模板的Github地址，clone下来即可：
 

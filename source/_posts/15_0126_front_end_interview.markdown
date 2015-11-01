@@ -40,7 +40,7 @@ category: [面试题]
     * ETag
     * X-Frame-Options
 
-#HTML 问题
+## HTML 问题
 * 什么是`doctype`？
 * 标准模式和兼容模式之间的区别是什么？
 * XHTML页面的局限性是什么？
@@ -53,7 +53,7 @@ category: [面试题]
 * 解释GET和POST的区别
 * 描述`<script>`、`<script async>`、`<script defer>`之间的差异。
 
-#CSS 问题
+## CSS 问题
 * CSS 的 class 和 id 的有什么区别？
 * 描述 `reset` CSS文件的作用和好处。
 * 描述什么是`Floats（浮动）`和它们是如何工作的。
