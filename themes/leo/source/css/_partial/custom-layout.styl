@@ -28,6 +28,8 @@
       content: '('
     &:after
       content: ')'
+      
+  // blogrolls
   .blogrolls-title
     font-size: 1.5em
     font-weight: 600
@@ -41,13 +43,86 @@
     h2
       font-size: 1.3em
       font-weight: 600
-      margin: -38px 0 10px 0;
-      background: #66C3BC;
-      color: #fff;
-      width: 54%;
-      border-radius: 3px;
-      padding: 3px 5px;
-      
+      margin: -38px 0 10px 0
+      background: #66C3BC
+      color: #fff
+      width: 54%
+      border-radius: 3px
+      padding: 3px 5px
+  
+  // project
+  .project-type 
+    font-size: 1.8em
+    font-weight: 700
+    margin: 0 0 1em 0
+    border-bottom: 1px solid #c2bcbc
+  .feature
+    background-color: #eaeaea
+    display: -moz-flex
+    display: -webkit-flex
+    display: -ms-flex
+    display: flex
+    moz-align-items: center
+    -webkit-align-items: center
+    -ms-align-items: center
+    align-items: center
+    margin-bottom: 4em
+    flex-direction: row
+    @media mq-mobile
+      margin-bottom: 3em
+      -moz-flex-direction: column
+      -webkit-flex-direction: column
+      -ms-flex-direction: column
+      flex-direction: column
+    .image
+      width: 48%
+      border-radius: 0
+      border: 0
+      display: inline-block
+      position: relative
+      @media mq-mobile
+        width: 100%
+      img 
+        border-radius: 0
+        display: block
+        max-width: 100%
+        @media mq-mobile
+          width: 100%
+    .content
+      padding: 0.5em 3em 0.5em 3em
+      width: 52%
+      box-sizing: border-box
+      @media mq-mobile
+        padding: 2em 2em 0.1em 2em
+        width: 100%
+      h2
+        font-size: 1.5em
+        line-height: 1.5em
+        font-weight: 700
+        margin: 0 0 1em 0
+      p
+        margin: 0 0 .5em 0
+      .actions
+        .button
+          -moz-appearance: none
+          -webkit-appearance: none
+          -ms-appearance: none
+          appearance: none
+          -moz-transition: color 0.2s ease-in-out
+          -webkit-transition: color 0.2s ease-in-out
+          -ms-transition: color 0.2s ease-in-out
+          transition: color 0.2s ease-in-out
+          border-radius: 2.5em
+          border: 0
+          font-weight: 700
+          min-width: 2em
+          text-align: center
+          text-decoration: none
+          // box-shadow: inset 0 0 0 2px #51BAA4
+          color: #51BAA4 !important
+        .button:hover
+          color: #249079 !important
+          
 .tag-cloud
   a
     @extends $link

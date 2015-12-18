@@ -2,7 +2,7 @@
 layout: post
 title:  黑客马拉松促进编程和公民思想
 date:   2015-03-02 08:24:00
-category: [翻译,ohthers]
+category: [翻译,others]
 ---
 
 ![clipboard.png](http://segmentfault.com/img/bVkXmB)

@@ -70,18 +70,20 @@ theme: leo
 ## Docs: http://hexo.io/docs/deployment.html
 deploy:
   type: git
-  repo: git@github.com:younglaker/blog.git
-#  repo: git@git.coding.net:laker/blog.git
+  repo: 
+    github: git@github.com:younglaker/blog.git,gh-pages
+    coding: git@git.coding.net:laker/blog.git,gh-pages
   branch: gh-pages
 
 # Header
 menu:
   Home: /blog
   Archives: archives
+  Projects: projects
+  About: about
   Categories: categories
   #Tags: tags
   Blogrolls: blogrolls
-  About: about
   RSS: atom.xml
 
 # Content

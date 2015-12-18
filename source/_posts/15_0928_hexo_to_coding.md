@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  把 Hexo 托管到 Coding
+title:  Hexo托管到Coding；Hexo同时部署到多个平台
 date:   2015-09-28 08:24:00
 category: [Hexo]
 tags: [Hexo,Coding,静态博客]
@@ -8,13 +8,15 @@ tags: [Hexo,Coding,静态博客]
 
 本文基于Hexo已经开发好，只是修改托管地址。关于Hexo其他文章详见[这里][1]。
 
-## 新建Coding项目
+## Hexo托管到Coding
+
+### 新建Coding项目
 
 新建Coding项目，并导入Github项目。
 
 <!--more-->
 
-## 修改Deploy地址
+### 修改Deploy地址
 
 在config文件，设置远端地址：
 
@@ -44,12 +46,35 @@ tags: [Hexo,Coding,静态博客]
 
 这就把Coding添加到信任列表里。这个和Github一样 `ssh -T git@github.com`。
 
-## 开启Coding演示
+### 开启Coding演示
 按提示一步步点就行了：
 
 ![开启Coding演示][3]
 
-提示：这样部署博客，并不能获得码币。而且经测试，Hexo不支持同时多个托管仓库，所以我还是放在Github上 = =
+提示：这样部署博客，并不能获得码币。
+
+## 同时部署多个平台
+
+配置（branch和前面的逗号不能有空格）：
+
+    deploy:
+      type: git
+      message: [message]
+      repo: 
+        github: <repository url>,[branch]
+        gitcafe: <repository url>,[branch]
+        coding: <repository url>,[branch]
+
+## 同时使用多个 deployer
+
+Hexo 会依照顺序执行每个 deployer。
+
+    deploy:
+      type: git
+      repo: 
+      type: heroku
+      repo:
+
 
   [1]: http://laker.me/blog/categories/Hexo/
   [2]: https://coding.net/help/about_git/about_ssh_host_key
