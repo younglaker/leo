@@ -45,7 +45,7 @@ Brackets 号称是懂web设计的开源编辑器。之所以这样说，是因�
 ### 文件地址提示
 ![文件地址提示][5]
 
-###图片预览
+### 图片预览
 HTML：
 
 ![图片预览][6]
@@ -55,7 +55,7 @@ Markdown：
 ![图片预览][7]
 
 ## 主题
-###更换主题
+### 更换主题
 在网上找的你喜欢的主题，我用的是一个基于 Sublime Monokai 的主题。GIthub 的地址是 `https://github.com/Brackets-Themes/Monokai`。
 
 有几种方法添加：

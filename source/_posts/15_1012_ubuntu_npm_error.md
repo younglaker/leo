@@ -6,7 +6,7 @@ category: [Nodejs]
 tags: [Nodejs,npm,Ubuntu]
 ---
 
-##问题
+## 问题
 在下Debian/Ubuntu 里 npm 安装包时：
 
     sudo npm install
@@ -41,19 +41,19 @@ tags: [Nodejs,npm,Ubuntu]
 
 也就是没有找到node。这是因为Ubuntu/Debia安装的 Nodejs 在 `/usr/bin/nodejs` 里，而大多数包是用 `/usr/bin/node`路径。 
 
-##解决方案一：
+## 解决方案一：
 
 使用symbolic link （符号链接，又称软链接）：
 
     sudo ln -s /usr/bin/nodejs /usr/bin/node
 
-##解决方案二
+## 解决方案二
 
 安装legacy：
 
     sudo apt-get install nodejs-legacy
 
-##解决方案三：
+## 解决方案三：
 
 项目目录里：
 修改package.json 文件中的
@@ -75,7 +75,7 @@ bin/www文件中的：
 
 更多相关讨论参考这条 [Github issue][1]
 
-##拓展 
+## 拓展 
 
 系统中的链接是一个已经存在的文件的另一个名字。
 

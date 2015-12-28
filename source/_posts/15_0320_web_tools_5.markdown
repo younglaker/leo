@@ -5,7 +5,7 @@ date:   2015-03-20 12:55:11
 category: [翻译,工具]
 ---
 
-##StackEdit
+## StackEdit
 
 它是一款很棒的`Markdown`编辑器。 基于`PageDown`开发而来，已经被 `Stack Overflow` 和其他 `Stack Exchange` 站点使用。 
 
@@ -17,17 +17,17 @@ StackEdit 能实时预览文档，保存到云端或本地的local storage，导
 
 <!--more-->
 
-##App.io - 在浏览器中运行移动app
+## App.io - 在浏览器中运行移动app
 
 ![clipboard.png](http://segmentfault.com/img/bVk69c)
 
-##IM Creator
+## IM Creator
 
 ![clipboard.png](http://segmentfault.com/img/bVk69d)
 
 在之前的文章中介绍了 Webflow。 现在我想介绍另一个创建响应式网站的GUI工具。 主要的区别是它有更多的主题。
 
-##Autoprefixer
+## Autoprefixer
 
 解析CSS和并根据 [Can I Use][1] 添加CSS厂商前缀。
 
@@ -54,7 +54,7 @@ Autoprefixer 将根据当前浏览器的流行度和支持度提供合适的前�
                 transition: transform 1s;
     }
 
-##Keypress.js
+## Keypress.js
 
 ![clipboard.png](http://segmentfault.com/img/bVk69i)
 
@@ -88,7 +88,7 @@ Autoprefixer 将根据当前浏览器的流行度和支持度提供合适的前�
         "is_solitary"       : false
     });
 
-##Dropzone.js
+## Dropzone.js
 
 ![clipboard.png](http://segmentfault.com/img/bVk69l)
 
@@ -107,7 +107,7 @@ Autoprefixer 将根据当前浏览器的流行度和支持度提供合适的前�
     // jQuery plugin
     $("div#myId").dropzone({ url: "/file/post" });
 
-##其他
+## 其他
 
 [花10美元你就可以在 Sublime 里用 Git][3]  ：
 

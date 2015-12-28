@@ -9,7 +9,7 @@ category: [翻译,工具]
 
 ---
 
-##[Prepros][1]
+## [Prepros][1]
 
 ![clipboard.png](http://segmentfault.com/img/bVk15L)
 
@@ -21,13 +21,13 @@ category: [翻译,工具]
 
 付费版本提供了 1-Click FTP/SFTP 部署、远程设备的检查和调试、其他有用的解决方案。
 
-##[Brackets][6]
+## [Brackets][6]
 
 ![clipboard.png](http://segmentfault.com/img/bVk15M)
 
 Adobe团队用NodeJS为web程序员开发的开源编辑器。 它的界面有点像 Sublime Text，它有实时自动加载工具、插件系统、HTML/CSS/JS自动补全。 Brackets允许在HTML文档里编辑CSS，按下CMD/CTRL + E后，找到相应选择器。 里面还很多像CSS过渡编辑器这样的智能工具。
 
-##[VerbalExpressions][7]
+## [VerbalExpressions][7]
 
 谁不爱写正则表达式？ 如果用VerbalExpressions写JavaScript进行URL检查的正则表达式可能会像这样：
 
@@ -50,11 +50,11 @@ Adobe团队用NodeJS为web程序员开发的开源编辑器。 它的界面有�
 
 VerbalExpressions也能操作 Ruby, C#, Python, Java, Groovy, PHP, Haskell, C++, Objective-C的正则。
 
-## [HTML.js][8]
+##  [HTML.js][8]
 
 这个是 fork 自 Voyeur.js 的库，压缩后才2KB，语法良好，用于遍历和操作DOM。
 
-###查找元素
+### 查找元素
 
     HTML.div.h1; // body>div>h1, return H1 elent
     HTML.div.h1.innerHTML = "Ilya Pestov"; 
@@ -64,7 +64,7 @@ VerbalExpressions也能操作 Ruby, C#, Python, Java, Groovy, PHP, Haskell, C++,
     HTML.find(".example"); // return array of nodes
     HTML.find("#example").h1.em; 
     
-###回调函数
+### 回调函数
 
 HTML.tag...use( callback(element) ) Root HTMLElement
 
@@ -81,7 +81,7 @@ HTML.tag...use( callback(element) ) Root HTMLElement
     });
 
 
-###创建元素
+### 创建元素
 
 HTML.create.tag...mult( factor ) Array
 
@@ -121,7 +121,7 @@ LiveScript是一种编译为JavaScript的语言。 它能直接映射到JavaScri
     last-three = reverse >> take-three >> reverse
     last-three [1 to 8] #
     
-###写成JS
+### 写成JS
 
 
     var take, takeThree, lastThree, slice$ = [].slice;
