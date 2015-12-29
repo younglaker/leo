@@ -11,15 +11,15 @@ http://laker.me/blog/
 - 在本地安装hexo，执行`hexo server`命令调试无误后，执行`hexo g`、`hexo d`编译后上传Github，即可在线看到博客
 
 ### 只想要主题
-如果你已经有Hexo博客，想使用本主题，可以直接使用本主题包。本主题文件目录在`themes--leo`，复制到你的主题目录下，在`_config.yaml`改用leo主题
+如果你已经有Hexo博客，想使用本主题，可以直接使用本主题包。本主题文件目录在`themes--leo`，复制到你的主题目录下，在`_config.yaml`改用leo主题:
 
     ## Themes: http://hexo.io/themes/
     theme: leo
 
 ## Done
-### 2015.11.4
+### 2015.12.29
 
-*  
+*  Project 页面
 
 ### 2015.7.20
 

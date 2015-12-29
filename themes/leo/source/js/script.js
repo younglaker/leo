@@ -25,4 +25,7 @@
   $('#main-nav-toggle').click(function () {
     $('#header').toggleClass('mobile-on');
   });
+
+  //  Lazyload
+  $("img.lazy").lazyload();
 })(jQuery);

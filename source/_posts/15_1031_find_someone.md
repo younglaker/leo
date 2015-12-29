@@ -2,7 +2,7 @@
 layout: post
 title:  请君入我相思门
 date:   2015-10-31 08:24:00
-category: "Life"
+category: [Life]
 ---
 
 ## 写在前面
