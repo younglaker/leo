@@ -87,7 +87,7 @@ mousedown s时触发：
     <input type="checkbox" name="things" value="thing3"> Input 3<br>
   <input type="checkbox" name="things" value="thing4"> Input 4<br>
 </div>
-    
+
 input[type="checkbox"]:checked {
   height: 20px;
   transition: all 1s ease;
@@ -130,8 +130,6 @@ input[type="checkbox"]:checked {
 通过 JavaScript 或者 jQuery 添加、删除class来完成动画，CSS格式类似`:hover`。
 
 例如：
-
-## 简单Demo
 
 以 click 事件为例，当点击方块时，变化长宽、背景色：
 

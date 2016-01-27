@@ -60,7 +60,7 @@ tags: [JavaScript,Web,Design]
 - 红色+蓝色=紫色
 - 黄色+红色=橙色
 - 黄色+蓝色=绿色
- 
+
 如果两种颜色能产生灰色或黑色，这两种色就是互补色。三原色按一定的比例相混，所得的色可以是黑色或黑灰色。在减法混合中，混合的色越多，明度越低，纯度也会有所下降。
 ### 中性混合
 中性混合是基于人的视觉生理特征所产生的视觉色彩混合，而并不变化色光或发光材料本身，混色效果的亮度既不增加也不减低，所以称为中性混合。
@@ -91,7 +91,7 @@ RGB混色原就是加法混色。RGB(0, 0, 0) 也就是红, 绿, 蓝都没有，
     G： 245 / 16 = 15 余 5, 而15对应F，即 F5
     B： 8 / 16 = 0 余 8，即 08
     所以RGB(169, 245, 8) = #A9F508
-    
+
 ### 16进制 转 RGB
 
 RGB的数值是16乘以HEX的第一位加上HEX的第二位，数字10以下的RGB和HEX都是相同的，但需要在前面补0成两位数，10对应A，11对应B，12对应C，13对应D，14对应E，15对应F。
@@ -117,7 +117,7 @@ RGB的数值是16乘以HEX的第一位加上HEX的第二位，数字10以下的R
 			hex += ("0" + Number(color[i]).toString(16)).slice(-2);
 		}
 		return hex;
-	}
+	};
 
 ### 16进制 转 RGB
 
@@ -136,11 +136,28 @@ RGB的数值是16乘以HEX的第一位加上HEX的第二位，数字10以下的R
         }
 
 		for (var i = 0; i < 3; i++) {
-			color[i] = "0x" + hex.substr(i+2, 2);
+			color[i] = "0x" + hex.substr(i * 2, 2);
 			rgb.push(parseInt(Number(color[i])));
 		}
 		return "rgb(" + rgb.join(",") + ")";
-	}
+	};
 
+另附网友小秦提供的优化版，比我的巧妙很多：
+
+	var hexToRgb = function(hex) {
+		var rgb = [];
+
+		hex = hex.substr(1);//去除前缀 # 号
+
+		if (hex.length === 3) { // 处理 "#abc" 成 "#aabbcc"
+			hex = hex.replace(/(.)/g, '$1$1');
+		}
+
+		hex.replace(/../g, function(color){
+			rgb.push(parseInt(color, 0x10));//按16进制将字符串转换为数字
+		});
+
+		return "rgb(" + rgb.join(",") + ")";
+	};
 
   [1]: http://baike.baidu.com/link?url=dNaFfIX8y8Ybn3B6YOMQtkWv8KLFn5-qqi8XoTU1L3Ot_4fMu7Ta7NlBfdlPLiCl4u58UqZJKc-wrIw4MMUiBq#3
