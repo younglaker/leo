@@ -26,11 +26,11 @@ category: [翻译,Terminal]
 
 Mac 下可以使用 `Terminal.app`
 
-![clipboard.png](/img/bVkAYc)
+![clipboard.png](http://segmentfault.com/img/bVkAYc)
 
 Windows 下可以按 <kbd>win</kbd> + <kbd>R</kbd>，输入 cmd 打开命令行工具，或者使用 Git Bash
 
-![clipboard.png](/img/bVkAYg)
+![clipboard.png](http://segmentfault.com/img/bVkAYg)
 
 ## 基本的认知
 
@@ -42,47 +42,47 @@ CLI 无非几个步骤：
 
 大多数命令只对你当前的目录（location）有效，因此，第一个要知道的命令就是帮助我们找到“现在在哪里”：
 
-![clipboard.png](/img/bVkBpB)
+![clipboard.png](http://segmentfault.com/img/bVkBpB)
 
 `pwd` 代表 `__p__rint __w__orking __d__irectory`：返回结果为“显示当前正在进行工作的目录”。
 
 `cd` 代表 `__c__hange __d__irectory`：返回结果为“改变当前工作目录”。下图是进入当前目录下的一个子目录：
 
-![clipboard.png](/img/bVkBpW)
+![clipboard.png](http://segmentfault.com/img/bVkBpW)
 
 `..`：返回上一级目录（当前目录的父目录）
 
-![clipboard.png](/img/bVkBpY)
+![clipboard.png](http://segmentfault.com/img/bVkBpY)
 
 
 `~` 是一种特殊的路径符号，代表着当前用户的“home”文件夹，故此有两种方法可以到你的 home 文件夹：
 
  1. 提供完整的路径：
 
-    ```
-    $ cd /Users/<your-username>/projects/
-    ```
-   
-    或用：
-   
-    ```
-    $ cd ~/projects/
-    ```
+```
+$ cd /Users/<your-username>/projects/
+```
 
-    2. 另一个重要的命令 `ls`，用于列出当前目录或指定目录的内容：
-   
-        ```
-        $ ls path/to/folder
-        ```
-   
-    这个命令的两个重要的可选参数：
+或用：
 
-    * `-l`：输出一个附加信息的列表。
-    * `-a` 标志：把隐藏的文件（夹）也显示出来，这个在如使用版本控制等很多情况下都很有用。  
+```
+$ cd ~/projects/
+```
+
+2. 另一个重要的命令 `ls`，用于列出当前目录或指定目录的内容：
+
+```
+$ ls path/to/folder
+```
+
+这个命令的两个重要的可选参数：
+
+* `-l`：输出一个附加信息的列表。
+* `-a` 标志：把隐藏的文件（夹）也显示出来，这个在如使用版本控制等很多情况下都很有用。
 
 结合一下，你可以在当前目录下这样使用：
 
-![clipboard.png](/img/bVkBqo)
+![clipboard.png](http://segmentfault.com/img/bVkBqo)
 
 或者在别的路径下调用：
 
@@ -136,7 +136,7 @@ $ mkdir new-folder
 
 使用 `cat` 命令会输出一个完整的文件内容
 
-![clipboard.png](/img/bVkBsy)
+![clipboard.png](http://segmentfault.com/img/bVkBsy)
 
 `head` 和 `tail` 命令非常相似，分别是只显示前 10 行、后 10 行内容。
 
@@ -161,7 +161,7 @@ $ cd ~/design/favorite-customer/mockups/
 
 或者使用 <kbd>TAB</kbd> 键快速完成：
 
-![clipboard.png](/img/bVkBuy)
+![clipboard.png](http://segmentfault.com/img/bVkBuy)
 
 你输入的字符不是每次都是明确的——因为“de”也可以是文件夹中“development”或“dentist”，在这种情况下 TAB 键不能自动补充你的输入，但它会有一个可能选项的列表，然后自动补全一些文字让你输入地更明确些。
 
@@ -172,7 +172,7 @@ CLI 会像浏览器一样记录你最近的命令历史，所以：
 * 向上键 <kbd>↑</kbd> 翻向更早的记录
 * 向下键 <kbd>↓</kbd> 翻向更近期的记录
 
-![clipboard.png](/img/bVkBuU)
+![clipboard.png](http://segmentfault.com/img/bVkBuU)
 
 ## CLI 的替代品
 
@@ -183,7 +183,7 @@ CLI 会像浏览器一样记录你最近的命令历史，所以：
 
 > 本文是我为 [SegmentFault][5] 所译
 
-  [1]: /img/bVkFgM
+  [1]: http://segmentfault.com/img/bVkFgM
   [2]: http://panic.com/transmit/
   [3]: http://www.git-tower.com/
   [4]: http://designmodo.com/command-line/#

@@ -86,7 +86,7 @@ category: [面试题]
 * 响应设计和自适应设计有什么不同？
 * 是否用过视网膜图形？
     * 使用了什么技术？
-    
+
 ## JS问题
 * 解释事件委托（event delegation）
 * 解释JavaScript的`this`如何工作的
@@ -102,7 +102,7 @@ category: [面试题]
 * 你如何组织你的代码？（模块、模式、经典传继承？）
 * 宿主对象（host objects）和本地对象（native objects）的区别是什么？
 * 比较下面写法的区别：`function Person(){}`, `var person = Person()`, `var person = new Person()`
-* `.call` 和 `.apply`的区别 
+* `.call` 和 `.apply`的区别
 * 解释`function.prototype.bind`。
 * 你什么时候优化你的代码？
 * 你什么时候用`document.write()`？
@@ -151,15 +151,15 @@ add(2)(5); // 7
 * window.foo的值是什么
 ```
 ( window.foo || ( window.foo = "bar" ) );
-```    
+```
 
 * 会alert什么值？
 ```
-var foo = "Hello"; 
-(function() { 
-  var bar = " World"; 
-  alert(foo + bar); 
-})(); 
+var foo = "Hello";
+(function() {
+  var bar = " World";
+  alert(foo + bar);
+})();
 alert(foo + bar);
 ```
 
