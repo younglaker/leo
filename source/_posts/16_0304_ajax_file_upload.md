@@ -1,8 +1,8 @@
 ---
 layout: post
 title:   HTML5+Ajax上传文件
-date:   2016-01-05 08:24:00
-category: [Ajax上传文件]
+date:   2016-03-04 08:24:00
+category: [Ajax]
 tags: [HTML5,Ajax]
 ---
 ![HTML5+Ajax上传文件][1]

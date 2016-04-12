@@ -27,5 +27,5 @@
   });
 
   //  Lazyload
-  $("img.lazy").lazyload();
+  // $("img.lazy").lazyload();
 })(jQuery);
