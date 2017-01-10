@@ -10,7 +10,7 @@ category: [Mac]
 * win7 64bit (Ubuntu下的安装方式和需要的东西一毛一样)
 * virtualbox 5.0
 
-从 http://pan.baidu.com/s/1gdKsLqF 下载以下文件
+从 链接: http://pan.baidu.com/s/1mix2EpU PWD: haxj 下载以下文件
 
 * HackBoot_Mav.iso
 * OSXMavericks2.iso  (解压 OSXMavericks2.part1.rar, OSXMavericks2.part2.rar, OSXMavericks2.part3.rar)

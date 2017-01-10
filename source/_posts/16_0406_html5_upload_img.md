@@ -139,7 +139,7 @@ function dragOver(evt) {
   evt.dataTransfer.dropEffect = 'copy';
 }
 
-// Setup the dnd listeners.
+// 监听器
 var dropZone = document.getElementById('drop_zone');
 dropZone.addEventListener('dragover', dragOver, false);
 dropZone.addEventListener('drop', fileSelect, false);
@@ -214,7 +214,7 @@ fileSelect.addEventListener("click", function (e) {
 
 
   [1]: http://77g54f.com1.z0.glb.clouddn.com/bgt-718552.png?imageView2/1/q/100|watermark/1/image/aHR0cDovLzc3ZzU0Zi5jb20xLnowLmdsYi5jbG91ZGRuLmNvbS9sYWtlcjIucG5n/dissolve/100/gravity/South/dy/5
-  [2]: http://laker.me/blog/2016/01/05/16_0304_ajax_file_upload/
+  [2]: http://laker.me/blog/2016/03/04/16_0304_ajax_file_upload/
   [3]: http://www.w3.org/TR/file-upload/
   [4]: https://codepen.io/younglaker/pen/vGmaYr
   [5]: https://codepen.io/younglaker/pen/vGmaYr
