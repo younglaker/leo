@@ -93,7 +93,6 @@ https://npm.taobao.org
     npm install -g cnpm --registry=https://registry.npm.taobao.org
     cnpm install [name]
 
-
 ## Ubuntu安装Bower
 
     npm install bower -g
@@ -152,6 +151,11 @@ https://npm.taobao.org
     $ npm install
     $ npm run dev
 
+
+## bootstrap
+
+    bower init
+    bower install bootstrap#3.3.7 --save
 
   [1]: http://77g54f.com1.z0.glb.clouddn.com/bgt-20170110.png?imageView2/1/q/100|watermark/1/image/aHR0cDovLzc3ZzU0Zi5jb20xLnowLmdsYi5jbG91ZGRuLmNvbS9sYWtlcjIucG5n/dissolve/100/gravity/South/dy/5
   [2]: http://77g54f.com1.z0.glb.clouddn.com/QQ20170105162824.png?imageView2/1/q/100|watermark/1/image/aHR0cDovLzc3ZzU0Zi5jb20xLnowLmdsYi5jbG91ZGRuLmNvbS9sYWtlcjIucG5n/dissolve/100/gravity/South/dy/5
