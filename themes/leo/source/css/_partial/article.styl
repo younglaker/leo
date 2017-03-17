@@ -138,11 +138,6 @@ a.article-title
       height: 100%
       margin-top: 0
 
-.article-more-link a
-  @extend $link
-  color: color-grey
-  border-bottom-color: color-grey
-
 .article-footer
   clearfix()
   font-size: 0.85em
@@ -225,9 +220,18 @@ a.article-title
     max-width: 100%
     margin: 0 auto
 
-.copyright
+.copyrights
   margin-top: 1.4em
   text-align: center
   color: #A1A1A1
   p
     margin: 0.4em 0
+
+.article-entry
+  p.article-more-link
+    line-height: 1em
+    margin: 1em 0
+    a
+      @extend $link
+      color: color-grey
+      border-bottom-color: color-grey

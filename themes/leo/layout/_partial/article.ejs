@@ -26,13 +26,13 @@
       <% } else { %>
         <%- post.content %>
         <hr>
-        <div class="copyright"> 
+        <div class="copyrights">
           <a href="<%- post.permalink %>"><%- page.title %></a>
           <!--%- partial('post/title', {class_name: 'archive-article-title'}) %-->
           <p>本文原创自<a href="http://laker.me/blog">Laker's Blog</a>，转载请注明出处，欢迎交换友链</p>
           <p>如果本文对您有帮助，微信扫一扫，请我喝杯咖啡吧</p>
           <p><img src="http://77g54f.com1.z0.glb.clouddn.com/weixinpay.jpg"></p>
-        </div>        
+        </div>
       <% } %>
     </div>
   <% if (!index || post.tags.length){ %>

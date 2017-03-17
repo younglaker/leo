@@ -77,7 +77,7 @@ deploy:
 
 # Header
 menu:
-  Home: /blog
+  Home: /
   Archives: archives
   Projects: projects
   About: about
@@ -118,3 +118,10 @@ baidu_tongji: true
 #  - hexo-qiniu-sync
 
 rss: true
+
+server:
+  port: 5000
+  log: false
+  ip: 0.0.0.0
+  compress: false
+  header: true
