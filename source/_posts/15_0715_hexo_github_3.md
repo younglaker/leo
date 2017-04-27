@@ -3,6 +3,7 @@ layout: post
 title:  Hexo3+Github搭建免费博客（三）评论/分享/统计
 date:   2015-07-15 08:24:00
 category: [Hexo]
+tags: [Hexo]
 comments: true
 ---
 

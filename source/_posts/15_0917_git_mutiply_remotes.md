@@ -3,6 +3,7 @@ layout: post
 title:  Git管理多个远程仓库(以Github和Coding为例)
 date:   2015-09-17 08:24:00
 category: "Git"
+tags: [Git]
 ---
 
 
