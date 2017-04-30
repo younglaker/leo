@@ -56,7 +56,7 @@ Mac：使用 [Homebrew][5], [MacPorts][6] 或下载 [安装程序][7] 安装。
 Linux (Ubuntu, Debian)：sudo apt-get install git-core
 Linux (Fedora, Red Hat, CentOS)：sudo yum install git-core
 
-###安装 hexo-cli
+### 安装 hexo-cli
 这是最基本的hexo
 
     npm install hexo-cli -g
@@ -93,7 +93,7 @@ Linux (Fedora, Red Hat, CentOS)：sudo yum install git-core
 
 > 注意：之后带有--save选项和npm install命令必须在之前初始化的博客目录下运行
 
-##建立github项目
+## 建立github项目
 >我看很多教程没有这一步，不知道是不是必须的，因为我觉得这样是开启pages服务，github才给出一个访问地址，为了保险就做了
 
 先到github建一个项目，假设项目名`blog`，地址`https://github.com/younglaker/blog.git`
