@@ -3,6 +3,7 @@ layout: post
 title:  Hexo3+Github搭建免费博客（五）七牛图床
 date:   2015-07-19 08:24:00
 category: [Hexo]
+tags: [Hexo]
 comments: true
 ---
 

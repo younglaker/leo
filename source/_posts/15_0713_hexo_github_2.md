@@ -3,6 +3,7 @@ layout: post
 title:  Hexo3+Github搭建免费博客（二）自定义主题
 date:   2015-07-13 08:24:00
 category: [Hexo]
+tags: [Hexo]
 ---
 
 ## 更换主题

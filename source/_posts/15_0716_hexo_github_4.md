@@ -3,6 +3,7 @@ layout: post
 title:  Hexo3+Github搭建免费博客（四）SEO/统计/RSS
 date:   2015-07-16 08:24:00
 category: [Hexo]
+tags: [Hexo]
 ---
 
 ## 提交搜索引擎
