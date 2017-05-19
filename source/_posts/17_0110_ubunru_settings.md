@@ -77,14 +77,14 @@ $ ssh-add ~/.ssh/id_rsa
 
     wget -qO- https://raw.githubusercontent.com/creationix/nvm/v0.33.0/install.sh | bash
 
-安装Nodejs 6.2.0，含npm，可换其他版本
+安装Nodejs 6.10.3，含npm，可换其他版本
 
-    nvm install 6.2.0
+    nvm install 6.10.3
     node -v
 
 切换Nodejs版本
 
-    nvm use 6.2.0（版本号）
+    nvm use 6.10.3（版本号）
 
 ## Ubuntu安装cnpm
 
