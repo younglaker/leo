@@ -113,7 +113,7 @@ uyan:
 # baidu_tongji
 baidu_tongji: true
 
-#plugins:  
+#plugins:
 #   - hexo-generator-feed
 #  - hexo-qiniu-sync
 
