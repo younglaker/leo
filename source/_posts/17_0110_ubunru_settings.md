@@ -2,8 +2,8 @@
 layout: post
 title:    我的 Ubuntu 配置记录
 date:   2017-01-10 08:24:00
-category: [Ubutntu]
-tags: [Ubutntu]
+category: [Ubuntu]
+tags: [Ubuntu]
 ---
 
 ![The cover][1]
