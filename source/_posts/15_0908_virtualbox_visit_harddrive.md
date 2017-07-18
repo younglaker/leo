@@ -2,7 +2,7 @@
 layout: post
 title:  在VirtualBox里访问本地硬盘
 date:   2015-09-08 08:24:00
-category: [Jekyll]
+category: [VirtualBox]
 ---
 
 ## 背景
