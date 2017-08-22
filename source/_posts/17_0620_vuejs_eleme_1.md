@@ -21,6 +21,10 @@ tags: [JavaScript,HTML5,Vue.js]
 [我做的含有详细代码注解的版本][3]
 
 ## 安装 Vue 模板
+安装vue-cli
+```
+npm install --global vue-cli
+```
 
 安装好vue-cli后执行：
 
@@ -110,7 +114,7 @@ https://github.com/ustbhuangyi/vue-sell/tree/1.0/src/common
 安装 stylys：
 
 ```
-npm install stylus stylus-loader –-save-dev
+npm[or cnpm] install stylus stylus-loader --save-dev
 ```
 
 ## 模拟数据
@@ -119,7 +123,8 @@ npm install stylus stylus-loader –-save-dev
 
 https://github.com/ustbhuangyi/vue-sell/blob/1.0/data.json
 
-在`var app = express()` 后面添加（因为用到 express，所以要在起定义后）：
+`dev-server.js`，在`var app = express()` 后面添加（因为用到 express，所以要在起定义后），然后重启服务：
+（每次修改 data.json、build文件夹、config文件夹下内容时，都要重启服务）
 
 ```
 // import data.json
@@ -153,6 +158,8 @@ apiRoutes.get('/ratings', function (req, res) {
 
 app.use('/api', apiRoutes)
 ```
+
+调用的方法见下一篇文章关于 App.vue 菜单导航的写法。
 
 ## Header
 
@@ -200,7 +207,7 @@ export default {
 </style>
 ```
 
-## tebs 路由
+## tabs 路由
 
 **App.vue:**
 
@@ -219,7 +226,7 @@ export default {
 </div>
 ```
 
-**build/webpack.base.conf.js** 新增路径别称
+**build/webpack.base.conf.js** 新增路径别称 （需要重启服务）
 
 ```
   resolve: {
