@@ -107,15 +107,15 @@ https://npm.taobao.org
 
     gem source --remove https://rubygems.org/
 
-然后添加淘宝的源https://ruby.taobao.org/:
+然后添加 Ruby China 的源hhttps://gems.ruby-china.org:
 
-    gem source -a https://ruby.taobao.org/
+    gem source -a hhttps://gems.ruby-china.org
 
-确保只有 ruby.taobao.org
+确保只有 gems.ruby-china.org:
 
     gem sources -l
 	*** CURRENT SOURCES ***
-	https://ruby.taobao.org
+	https://gems.ruby-china.org
 
 ## Ubuntu安装Sass
 
