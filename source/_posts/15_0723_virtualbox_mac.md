@@ -146,11 +146,11 @@ category: [Mac]
 
 ![clipboard.png](http://segmentfault.com/img/bVmNE8)
 
-##一些必要设置
+## 一些必要设置
 
 ### 设置输入法中英文切换
 
-我的习惯是把设为`ctrl+space`。由于冲突，所以先把spotlight设为`ctrl+f`：
+我的习惯是把输入法中英文切换设为`ctrl+space`。由于冲突，所以先把spotlight设为`ctrl+f`：
 
 ![clipboard.png](http://segmentfault.com/img/bVmNHw)
 
