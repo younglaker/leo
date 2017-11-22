@@ -26,10 +26,10 @@
       <% } else { %>
         <%- post.content %>
         <hr>
-        <div class="copyrightss">
+        <div class="copyrights1">
           <a href="<%- post.permalink %>"><%- page.title %></a>
           <!--%- partial('post/title', {class_name: 'archive-article-title'}) %-->
-          <p>本文原创自<a href="http://laker.me/blog">Laker's Blog</a>，转载请注明出处，欢迎交换友链</p>
+          <p>本文原创自<a href="http://laker.me/blog">http://laker.me/blog</a>，转载请注明出处，欢迎交换友链</p>
           <p>如果本文对您有帮助，微信扫一扫，请我喝杯咖啡吧</p>
           <p><img src="http://77g54f.com1.z0.glb.clouddn.com/weixinpay.jpg"></p>
         </div>
@@ -58,7 +58,7 @@
 <% if (config.uyan.enable && page.comments){ %>
 
 <section id="comment">
-  <h1 class="title"><%= __('comment') %></h1>
+  <h1 class="title"><%= __('评论组件不稳定，有事请联系V信 lakerHQ (请备注来自博客)') %></h1>
   <div id="disqus_thread">
     <!-- UY BEGIN -->
     <div id="uyan_frame"></div>
