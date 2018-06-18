@@ -2,7 +2,7 @@
 layout: post
 title:  Web开发利器推荐（五）
 date:   2015-03-20 12:55:11
-category: [翻译,工具]
+category: [翻译,Tools]
 ---
 
 ## StackEdit

@@ -2,7 +2,7 @@
 layout: post
 title:  红杏退费申请
 date:   2015-10-23 08:24:00
-category: [其他]
+category: [Others]
 ---
 
 ## 起因

@@ -2,7 +2,7 @@
 layout: post
 title:  比特币BTC瑞波币XRP用户领取恒星币XLM Lumen
 date:   2017-06-28 08:24:00
-category: [其他]
+category: [Others]
 ---
 
 ![领取恒星币XLM Lumen][1]

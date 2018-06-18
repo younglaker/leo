@@ -2,7 +2,7 @@
 layout: post
 title:  Web开发利器推荐（四）
 date:   2015-03-16 08:24:00
-category: [翻译,工具]
+category: [翻译,Tools]
 ---
 
 ## [Pace][1]， [Vex][2] 和 [Messenger][3]
