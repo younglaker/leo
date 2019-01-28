@@ -70,7 +70,7 @@ theme: leo
 ## Docs: http://hexo.io/docs/deployment.html
 deploy:
   type: git
-  repo: 
+  repo:
     github: git@github.com:younglaker/blog.git,gh-pages
     coding: git@git.coding.net:laker/blog.git,gh-pages
   branch: gh-pages
@@ -107,8 +107,10 @@ tag: 1
 uyan:
   enable: true
 
-# disqus
-#disqus_shortname: laker
+disqus:
+  disqus_shortname: laker-huang
+  enable: true
+  count: true
 
 # baidu_tongji
 baidu_tongji: true

@@ -78,7 +78,7 @@
 		<!-- /Back-End -->
 
 		<!-- Production -->
-		<h2 class="blogrolls-title">Production</h2>
+		<h2 class="blogrolls-title">Product Manager</h2>
 		<ul class="blogrolls-list">
 			<li class="blogrolls-list-item">
 				<a href="https://www.shier.pro" title="拾贰.pro" target="_blank" >拾贰.pro</a> -- <span>Life is short, you need python</span>
@@ -88,13 +88,31 @@
   </div>
 </section>
 
-<section id="comment">
+<!-- <section id="comment">
   <h1 class="title"><%= __('评论组件不稳定，有事请联系 V信 lakerHQ (请备注来自博客)') %></h1>
-  <b style="color:#f00">被提示 “ 请文明发言 ” 的请把 “ http ” 去掉。</b>
   <div id="disqus_thread">
-    <!-- UY BEGIN -->
     <div id="uyan_frame"></div>
     <script type="text/javascript" src="http://v2.uyan.cc/code/uyan.js?uid=1672779"></script>
-    <!-- UY END -->
 	</div>
-</section>
+</section> -->
+
+<div id="disqus_thread"></div>
+<script>
+
+/**
+*  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+*  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
+/*
+var disqus_config = function () {
+this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+};
+*/
+(function() { // DON'T EDIT BELOW THIS LINE
+var d = document, s = d.createElement('script');
+s.src = 'https://laker-huang.disqus.com/embed.js';
+s.setAttribute('data-timestamp', +new Date());
+(d.head || d.body).appendChild(s);
+})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
