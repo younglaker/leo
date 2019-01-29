@@ -5,7 +5,7 @@
 # Site
 title: 进击的程序媛，Laker's blog
 subtitle: 进击的程序媛，江小湖Laker
-description: 前端,web,coder
+description: web,coder,Machine learning,AI,ML,DL,机器学习,深度学习. 前端
 author: Laker Huang
 email: younglaker8#gmail.com
 language: zh-CN
@@ -107,10 +107,10 @@ tag: 1
 uyan:
   enable: true
 
-disqus:
-  disqus_shortname: laker-huang
-  enable: true
-  count: true
+# disqus
+# comments: true
+# disqus_shortname: laker-huang
+
 
 # baidu_tongji
 baidu_tongji: true
