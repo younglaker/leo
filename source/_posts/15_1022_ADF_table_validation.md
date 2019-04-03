@@ -8,11 +8,12 @@ tags: [Java,ADF,JDeveloper]
 
 在EO中，选中要验证的字段，编辑：
 
+<!--more-->
+
 ![验证][1]
 
 Validation —— New —— 选择类型，比如正则、长度限制、值的大小判断
 
-<!--more-->
 
 ![验证][2]
 

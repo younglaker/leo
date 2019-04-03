@@ -6,7 +6,7 @@ category: [ React.js]
 tags: [JavaScript,HTML5,React.js,Semantic]
 ---
 
-![Semantic][1]
+<!-- ![Semantic][1] -->
 
 <!--more-->
 
@@ -170,7 +170,7 @@ HTML
 
 <div class="ui fluid selection search dropdown multiple">
   <input name="tags" type="hidden">
-  
+
   <div class="default text">Select</div>
   <i class="dropdown icon"></i>
   <div class="menu">
@@ -188,12 +188,12 @@ $('.ui.dropdown').dropdown({
     onChange: function (value, text, $selectedItem) {
       console.log(value);
     },
-    forceSelection: false, 
-    selectOnKeydown: false, 
+    forceSelection: false,
+    selectOnKeydown: false,
     showOnFocus: false, // 聚焦时不展开下拉列表
-    on: "hover" 
+    on: "hover"
 });
- 
+
 
 // 清空
 $('#clearValues').click(function() {
@@ -293,7 +293,7 @@ var MyCheckBox = React.createClass({
 
 ## 时间、日期控件 date range picker
 
-日期范围选择器jQuery：https://github.com/longbill/jquery-date-range-picker 
+日期范围选择器jQuery：https://github.com/longbill/jquery-date-range-picker
 日期范围选择器jQuery：https://codecanyon.net/item/calentim-date-time-range-picker/20099228
 很多功能的选择器React：https://github.com/react-component/calendar
 小时范围选择器 https://codepen.io/fikrimarhan/pen/Pmaooq

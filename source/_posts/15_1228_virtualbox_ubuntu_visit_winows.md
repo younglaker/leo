@@ -8,7 +8,7 @@ tags: [Ubuntu,VirtualBox,Windows]
 
 - VirtualBox对Ubuntu系统设置共享文件
 
-![共享文件][1]
+<!-- ![共享文件][1] -->
 
 <!--more-->
 

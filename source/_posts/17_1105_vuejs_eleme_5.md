@@ -6,7 +6,7 @@ category: [Vue.js]
 tags: [JavaScript,HTML5,Vue.js]
 ---
 
-![Vue.js 2 高仿饿了么开发及解注五][1]
+<!-- ![Vue.js 2 高仿饿了么开发及解注五][1] -->
 
 <!--more-->
 
@@ -40,7 +40,7 @@ export default {
 
 ## 解注： 选择食物
 
-`goods.vue` 
+`goods.vue`
 
 ```
 data.json里goods的结构
@@ -201,7 +201,7 @@ components: {
   <div class="cartcontrol-wrapper">
     <!-- 传入 food -->
     <cartcontrol :food="food"></cartcontrol>
-  </div> 
+  </div>
 </li>
 ```
 
@@ -254,7 +254,7 @@ methods: {
   /* 添加食物到购物车 */
   addCart (event) {
     ...
-    
+
     // 定义并触发 add 事件，event.target（点击的目标，即食品对应的加号） 作为参数
     this.$emit('add', event.target)
   }
@@ -285,7 +285,7 @@ _drop (target) {
 }
 ```
 
-`shopcart.vue` 
+`shopcart.vue`
 这里的transition用 [JavaScript 钩子][4]的用法。
 
 - @before-enter="方法"

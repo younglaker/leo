@@ -8,7 +8,7 @@ tags: [Sublime]
 
 本人使用的版本是sublime 3 build 3065。文件树和标签的中文会乱码。
 
-![sublime 3 中文乱码][1]
+<!-- ![sublime 3 中文乱码][1] -->
 
 <!--more-->
 

@@ -5,7 +5,7 @@ date:   2015-01-22 08:24:00
 category: [翻译,Terminal]
 ---
 
-![help.png][1]
+<!-- ![help.png][1] -->
 
 命令行（command line），也称为 CLI, Terminal, bash, shell……我们中有很多人很怕使用它，但其实只要你知道一些基本的命令和概念，就没什么好怕的了。（文中接下来的内容，命令行统一用 CLI 称呼）
 

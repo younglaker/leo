@@ -5,7 +5,7 @@ date:   2015-02-05 08:24:00
 category: [翻译,HTML5]
 ---
 
-![clipboard.png](http://segmentfault.com/img/bVkOoy)
+<!-- ![clipboard.png](http://segmentfault.com/img/bVkOoy) -->
 
 Web API 变得越来越丰富，其中一个值得注意的是`Web Speech` API。传统的网站只能“说”，这个API的出现，让网站能“倾听”用户。这个功能已经开放了一系列的用法，非常棒。
 
@@ -44,7 +44,7 @@ function speak(textToSpeak) {
 目前，语音合成只有Chrome和Safari（包括桌面和移动设备版）支持。此外，通过API提供给用户的声音在很大程度上取决于操作系统。谷歌有自己的一套给Chrome的默认声音，可以在Mac OS X，Windows和Ubuntu上使用。Mac OS X的声音也可用，所以和OSX的Safari的声音一样。你可以通过开发者工具的控制台看有哪种声音可用。
 
     window.speechSynthesis.getVoices();
-    
+
 **如果你使用OS X，可以用“Zarvox”声音**
 
 ##语音识别 Speech Recognition
@@ -62,10 +62,10 @@ Web Speech API另一部分是语音识别，它能够识别用过从麦克风或
 
     // 开始
     newRecognition.start();
-    
+
     // 停止
     newRecognition.stop();
-    
+
 还可以绑定很多事件，例如：`soundstart`、`speechstart`、`result` 、 `error`。[看看这个demo][1]。
 
 ## 使用场景举例

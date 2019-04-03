@@ -5,8 +5,8 @@ date:   2014-02-15 08:24:00
 category: "PHP"
 ---
 
-## 镇文图
-![镇文图][1]
+<!-- ## 镇文图 -->
+<!-- ![镇文图][1] -->
 
 ## 什么是Session
 Session是用于保持状态的基于Web服务器的方法。可以简单理解为服务器给用户生成了一个通行证。
@@ -15,7 +15,7 @@ Session是用于保持状态的基于Web服务器的方法。可以简单理解�
 
 ## 登录的过程
 
-1.提交用户输入的用户名和密码 
+1.提交用户输入的用户名和密码
 2.检查是否存在此用户名
 3.如果存在，检查密码是否正确
 4.如果正确，生成session
@@ -25,15 +25,15 @@ Session是用于保持状态的基于Web服务器的方法。可以简单理解�
 1.加载session类
 
     $this -> load -> library('sesion');
-    
+
 2.创建session
 
     $this -> session -> set_userdata($array);
-    
+
 3.查看session
 
     $this -> session -> userdata(session名);
-    
+
 4.删除session
 
     $this -> session -> unset_userdata(session名);
@@ -50,7 +50,7 @@ Session是用于保持状态的基于Web服务器的方法。可以简单理解�
 		password: <input type="password" name="u_pw">
 		<input type="submit" name="submit" value="submit">
 	</form>
-	
+
 	<a href="login/logout">退出</a>
 	<!-- 调用控制器Login的logout函数 -->
 
@@ -59,7 +59,7 @@ Session是用于保持状态的基于Web服务器的方法。可以简单理解�
     <?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');
 
     class Login extends CI_Controller {
-    
+
         public function index() {
             $this -> load -> view('login');
         }
@@ -105,7 +105,7 @@ Session是用于保持状态的基于Web服务器的方法。可以简单理解�
     }
 
 6.退出登录
-    
+
     function logout() {
         $this -> load -> library('session');
         // 载入CI的session库
@@ -116,13 +116,13 @@ Session是用于保持状态的基于Web服务器的方法。可以简单理解�
 7.控制器最终代码
 
     <?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');
-    
+
     class Login extends CI_Controller {
-    
+
         public function index() {
             $this -> load -> view('login');
         }
-    
+
         function check() {
             $this -> load -> model('user_test');
             $user = $this -> user_test -> u_select($_POST['u_name']);
@@ -141,7 +141,7 @@ Session是用于保持状态的基于Web服务器的方法。可以简单理解�
                 echo 'name wrong';
             }
         }
-    
+
         function is_login() {
             $this -> load -> library('session');
             if ($this -> session -> userdata('s_id')) {
@@ -150,7 +150,7 @@ Session是用于保持状态的基于Web服务器的方法。可以简单理解�
                 echo "no login";
             }
         }
-    
+
         function logout() {
             $this -> load -> library('session');
             $this -> session -> unset_userdata('s_id');

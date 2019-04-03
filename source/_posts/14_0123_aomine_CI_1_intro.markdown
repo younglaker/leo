@@ -5,10 +5,10 @@ date:   2014-01-23 08:24:00
 category: "PHP"
 ---
 
-## 有的没的
-![青峰大辉][1]
-[阿大](http://baike.baidu.com/link?url=e1_jXEDQnhyDOoG5YCg9_-EU2HZD5_2kpGIz4MgVe7U5HQ19v0IssPJDYnt2gTI2v-DnAQs52mWbi4fiJdo_Na)镇文(-_-メ)～
-阿大你太黑了，回去洗把脸看看有没有救～
+<!-- ## 有的没的 -->
+<!-- ![青峰大辉][1] -->
+<!-- [阿大](http://baike.baidu.com/link?url=e1_jXEDQnhyDOoG5YCg9_-EU2HZD5_2kpGIz4MgVe7U5HQ19v0IssPJDYnt2gTI2v-DnAQs52mWbi4fiJdo_Na)镇文(-_-メ)～ -->
+<!-- 阿大你太黑了，回去洗把脸看看有没有救～ -->
 
 ## 学习背景
 CI是一个比较流行的PHP MVC框架，CI的文档完善和资源丰富，适合初学～

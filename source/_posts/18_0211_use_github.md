@@ -6,7 +6,7 @@ category: [GitHub]
 tags: [GitHub]
 ---
 
-![利用 Github 分支管理小项目][1]
+<!-- ![利用 Github 分支管理小项目][1] -->
 
 <!--more-->
 
@@ -42,9 +42,9 @@ tags: [GitHub]
 
 先切换到默认分支
 
-    git checkout master 
+    git checkout master
 
-合并到 master 
+合并到 master
 
     git merge origin/分支名
 

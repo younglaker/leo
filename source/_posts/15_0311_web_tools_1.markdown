@@ -11,7 +11,7 @@ category: [翻译,Tools]
 
 ## [Prepros][1]
 
-![clipboard.png](http://segmentfault.com/img/bVk15L)
+<!-- ![clipboard.png](http://segmentfault.com/img/bVk15L) -->
 
 这是很赞的预处理程序。 Prepros能编译很多种语言 (LESS, Sass, SCSS, Stylus, Jade, Slim, Coffeescript, LiveScript, Haml, Markdown)，实时压缩和连接JS，优化图片，当CSS或HTML变化时自动刷新浏览器，多设备测试。
 
@@ -40,10 +40,10 @@ Adobe团队用NodeJS为web程序员开发的开源编辑器。 它的界面有�
             .maybe( "www." )
             .anythingBut( " " )
             .endOfLine();
-    
+
     // Create an example URL
     var testMe = "https://www.google.com";
-    
+
     // Use RegExp object's native test() function
     if( tester.test( testMe ) ) alert( "We have a correct URL "); // This output will fire
     else alert( "The URL is incorrect" );
@@ -57,13 +57,13 @@ VerbalExpressions也能操作 Ruby, C#, Python, Java, Groovy, PHP, Haskell, C++,
 ### 查找元素
 
     HTML.div.h1; // body>div>h1, return H1 elent
-    HTML.div.h1.innerHTML = "Ilya Pestov"; 
+    HTML.div.h1.innerHTML = "Ilya Pestov";
     HTML.div.ul.li; // return array of li elements
-    
+
     HTML.find("#example"); // return one node
     HTML.find(".example"); // return array of nodes
-    HTML.find("#example").h1.em; 
-    
+    HTML.find("#example").h1.em;
+
 ### 回调函数
 
 HTML.tag...use( callback(element) ) Root HTMLElement
@@ -71,10 +71,10 @@ HTML.tag...use( callback(element) ) Root HTMLElement
 
     HTML.div.ul.li.use(); // return div element
     HTML.div.ul.li.use(function(li, i) {
-            // loop in list 
+            // loop in list
             li.innerHTML = "List item #" + i;
     });
-    
+
     HTML.div.ul.use(function(ul) {
             ul.style.background = "blue";
             ul.li; //..
@@ -88,14 +88,14 @@ HTML.create.tag...mult( factor ) Array
     HTML.create.div; // return div element
     HTML.create.div.h1; // return H1 with div parent
     HTML.create.div.h1.em;
-    
-    HTML.create.ul.li.mult(10).use(function(li, i) { // create 10 li elements 
-         li.innerHTML = "Created list items!"; // 
+
+    HTML.create.ul.li.mult(10).use(function(li, i) { // create 10 li elements
+         li.innerHTML = "Created list items!"; //
     });
-    
+
     //HTML.tag...eq( begin , end ) HTMLElement|Array
     HTML.create.ul.li.mult(10).eq(7).innerHTML = "The 8th item.";
-    
+
     HTML.ul.li.eq(2, 6).use(function(li, i) {
          li.create.em.innerText = "Hello World";
     });
@@ -111,16 +111,16 @@ LiveScript是一种编译为JavaScript的语言。 它能直接映射到JavaScri
       | n <= 0     => []
       | empty list => []
       | otherwise  => [x] ++ take n - 1, xs
-    
+
     take 2, [1 2 3 4 5] #=> [1, 2]
-    
+
     take-three = take 3
     take-three [3 to 8] #=> [3, 4, 5]
-    
+
     # Function composition, 'reverse' from prelude.ls
     last-three = reverse >> take-three >> reverse
     last-three [1 to 8] #
-    
+
 ### 写成JS
 
 
@@ -140,8 +140,8 @@ LiveScript是一种编译为JavaScript的语言。 它能直接映射到JavaScri
     take(2, [1, 2, 3, 4, 5]);
     takeThree = take(3);
     takeThree([3, 4, 5, 6, 7, 8]);
-    
-    
+
+
     lastThree = function(){
       return reverse(takeThree(reverse.apply(this, arguments)));
     };

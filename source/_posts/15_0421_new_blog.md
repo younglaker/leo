@@ -7,7 +7,7 @@ category: [Life]
 
 花了半个月时间，从Jekyll迁移至Hexo。下了血本的域名 [http://laker.me/](http://laker.me/) 终于正式用上了。
 
-![clipboard.png](http://segmentfault.com/img/bVmLQk)
+<!-- ![clipboard.png](http://segmentfault.com/img/bVmLQk) -->
 
 <!--more-->
 

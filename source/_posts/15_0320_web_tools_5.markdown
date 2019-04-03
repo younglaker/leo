@@ -7,11 +7,11 @@ category: [翻译,Tools]
 
 ## StackEdit
 
-它是一款很棒的`Markdown`编辑器。 基于`PageDown`开发而来，已经被 `Stack Overflow` 和其他 `Stack Exchange` 站点使用。 
+它是一款很棒的`Markdown`编辑器。 基于`PageDown`开发而来，已经被 `Stack Overflow` 和其他 `Stack Exchange` 站点使用。
 
-StackEdit 能实时预览文档，保存到云端或本地的local storage，导出 Markdown、HTML 或 PDF 格式，与GitHub、Gist、Google Drive、 Dropbox 或者任何 SSH 服务器。 
+StackEdit 能实时预览文档，保存到云端或本地的local storage，导出 Markdown、HTML 或 PDF 格式，与GitHub、Gist、Google Drive、 Dropbox 或者任何 SSH 服务器。
 
-![clipboard.png](http://segmentfault.com/img/bVk69a)
+<!-- ![clipboard.png](http://segmentfault.com/img/bVk69a) -->
 
 还有其他功能： 支持`LaTeX`、所见即所得、在线/离线模式、`Prettify/Highlight.js`语法高亮、支持扩展。
 
@@ -60,20 +60,20 @@ Autoprefixer 将根据当前浏览器的流行度和支持度提供合适的前�
 
 这是最佳的捕捉键盘输入的解决方案：
 
-    keypress.combo("shift s", function() {  
+    keypress.combo("shift s", function() {
         console.log("You pressed shift and s");
     });
-    
+
     // There are also a few other shortcut methods:
-    
+
     // If we want to register a counting combo
-    keypress.counting_combo("tab space", function(e, count) {  
+    keypress.counting_combo("tab space", function(e, count) {
         console.log("You've pressed this " + count + " times.");
     });
 
 它有许多事件和组合的变化：
 
-    keypress.register_combo({  
+    keypress.register_combo({
         "keys"              : null,
         "on_keydown"        : null,
         "on_keyup"          : null,
@@ -96,14 +96,14 @@ Autoprefixer 将根据当前浏览器的流行度和支持度提供合适的前�
 
 插入脚本（还提供一个Requirejs AMD 模块）：
 
-    <script src="./path/to/dropzone.js"></script>  
-    <form id="my-awesome-dropzone" action="/target" class="dropzone"></form>  
-    
+    <script src="./path/to/dropzone.js"></script>
+    <form id="my-awesome-dropzone" action="/target" class="dropzone"></form>
+
 这样就好了。 真的！ 你也可以用JS代码：
 
     // Dropzone class:
     var myDropzone = new Dropzone("div#myId", { url: "/file/post"});
-    
+
     // jQuery plugin
     $("div#myId").dropzone({ url: "/file/post" });
 

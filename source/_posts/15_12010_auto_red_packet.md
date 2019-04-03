@@ -7,7 +7,7 @@ tags: [JavaScript,自动抢红包]
 ---
 双十一红包没在意，听朋友说抢到上百的红包，双十二弹出广告随便点了一下，心血来潮想写了个脚本。
 
-![双十二红包][1]
+<!-- ![双十二红包][1] -->
 
 <!--more-->
 
@@ -18,7 +18,7 @@ tags: [JavaScript,自动抢红包]
 本地新建一个目录 click ，新建文件manifest.json，里面定义了插件的配置。
 
 ```
-{ 
+{
   "name": "click",
   "version": "1.0",
   "manifest_version":2,
@@ -52,13 +52,13 @@ tags: [JavaScript,自动抢红包]
 把以下代码粘贴到 main.js:
 ```
 $(document).ready(function() {
-    
+
     var a = setInterval(function () {
       console.log("开始");
-      
+
       // 点击抢红包
         $(document).xpathEvaluate('/html/body/div[11]/div[2]/img').click();
-        
+
         // 点击再来一次
         var b = setInterval(function () {
           $(document).xpathEvaluate('/html/body/div[11]/div[4]/div[2]/div[1]').click();
@@ -68,7 +68,7 @@ $(document).ready(function() {
 
 // 处理XPath
 $.fn.xpathEvaluate = function (xpathExpression) {
-   $this = this.first(); 
+   $this = this.first();
 
    xpathResult = this[0].evaluate(xpathExpression, this[0], null, XPathResult.ORDERED_NODE_ITERATOR_TYPE, null);
 

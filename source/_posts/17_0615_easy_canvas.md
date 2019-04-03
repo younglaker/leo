@@ -6,7 +6,7 @@ category: [HTML5]
 tags: [JavaScript,HTML5,Canvas]
 ---
 
-![Easy Canvas][1]
+<!-- ![Easy Canvas][1] -->
 
 <!--more-->
 

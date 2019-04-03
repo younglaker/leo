@@ -7,12 +7,12 @@ category: [翻译,CSS3]
 
 ## CSS3 Shadows浏览器支持情况
 text-shadow 和 box-shadow 这两个属性在主流现代浏览器上得到了很好的支持( > Chrome 4.0, > Firefox 3.5, > Safari 4.0, > Opera 9.6, > IE10)。
-
+<!--more-->
 ## text-shadow 和 box-shadow 的不同之处：
 
 ![clipboard.png](http://segmentfault.com/img/bVkzqv)
 
-<!--more-->
+
 
 box-shadow语法：
 
@@ -66,7 +66,7 @@ element {
 }
 
 element {
-  text-shadow:4px -4px 10px red; 
+  text-shadow:4px -4px 10px red;
   color:azure;
   background:#333;
 }
@@ -82,7 +82,7 @@ element {
   text-shadow:0px 0px 4px ;
 }
 parent {
-  color:lightgray; 
+  color:lightgray;
 background:#333;
 }
 
@@ -115,23 +115,23 @@ text-shadow:0 0 0 3px rgba(128, 255, 0, 0.75); color:green;  background:#333;
 text-shadow: 0 0 0 3px white, 0 0 0 4px gray; color:magenta; /* example 1: basic outlining */
 
 text-shadow: 3px 3px 4px 2px rgba(255,255,255,0.35),   /* example 2 */
-             6px -6px 4px 2px rgba(255,255,255,0.25),  
+             6px -6px 4px 2px rgba(255,255,255,0.25),
              -3px -3px 4px 6px rgba(255,0,255,0.15);
 
 text-shadow: 0 0 0 3px white,   /* example 3: neon - 1 */
-             0 0 2px 6px magenta, 
-             0 0 1px 9px white, 
+             0 0 2px 6px magenta,
+             0 0 1px 9px white,
              0 0 6px 12px magenta;
 color:magenta;
 
 text-shadow: 0 0 2px #fff,    /* example 4: neon 2 */
-             0 0 4px 2px rgba(255,255,255,0.5), 
-             0 0 6px 6px #f0f, 
-             0 0 4px 7px #fff, 
-             0 0 3px 15px #222, 
-             -4px 0 2px 9px #f0f, 
-             4px 0 2px 9px #f0f, 
-             0 -4px 2px 9px #f0f, 
+             0 0 4px 2px rgba(255,255,255,0.5),
+             0 0 6px 6px #f0f,
+             0 0 4px 7px #fff,
+             0 0 3px 15px #222,
+             -4px 0 2px 9px #f0f,
+             4px 0 2px 9px #f0f,
+             0 -4px 2px 9px #f0f,
              0 4px 2px 9px #f0f;
 color:white;
 
@@ -151,13 +151,13 @@ text-shadow: 0px 0px 0px 4px magenta;
 
 /* is similar to: */
 
-text-shadow: magenta 0px 2px,  
-             magenta 2px 0px,  
-             magenta -2px 0px,  
-             magenta 0px -2px,  
-             magenta -1.4px -1.4px,  
-             magenta 1.4px 1.4px,  
-             magenta 1.4px -1.4px,  
+text-shadow: magenta 0px 2px,
+             magenta 2px 0px,
+             magenta -2px 0px,
+             magenta 0px -2px,
+             magenta -1.4px -1.4px,
+             magenta 1.4px 1.4px,
+             magenta 1.4px -1.4px,
              magenta -1.4px 1.4px;
 ```
 
@@ -167,10 +167,10 @@ text-shadow: magenta 0px 2px,
 
 ![clipboard.png](http://segmentfault.com/img/bVkzt8)
 ```
-text-shadow: 0 0 2px 2px white, 
-             2px 0 2px 5px #222, 
-             3px 0 3px 6px #933, 
-             5px 0 2px 14px #222, 
+text-shadow: 0 0 2px 2px white,
+             2px 0 2px 5px #222,
+             3px 0 3px 6px #933,
+             5px 0 2px 14px #222,
              6px 0 5px 16px #533;
 background-color:#222;
 color:white;
@@ -189,45 +189,45 @@ background-color:#333;
 
 ![clipboard.png](http://segmentfault.com/img/bVkzuj)
 ```
-text-shadow: 0 0 2px 3px yellow, 
-             0 0 2px 6px orange, 
-             0 0 2px 9px red, 
-             0 0 2px 12px lime, 
-             0 0 2px 15px blue, 
+text-shadow: 0 0 2px 3px yellow,
+             0 0 2px 6px orange,
+             0 0 2px 9px red,
+             0 0 2px 12px lime,
+             0 0 2px 15px blue,
              0 0 2px 18px violet;
 ```
 ##3D
 
 ![clipboard.png](http://segmentfault.com/img/bVkzur)
 ```
-text-shadow: 0 0 1px #999, 
-             1px 1px 1px #888, 
-             2px 2px 1px #777, 
-             3px 3px 1px #666, 
-             4px 4px 1px #555, 
+text-shadow: 0 0 1px #999,
+             1px 1px 1px #888,
+             2px 2px 1px #777,
+             3px 3px 1px #666,
+             4px 4px 1px #555,
              5px 5px 1px #444;
 background-color:#333;
 color:white;
 ```
 
-##Retro / Vintage 
+##Retro / Vintage
 
 ![clipboard.png](http://segmentfault.com/img/bVkzuw)
 ```
-text-shadow: 2px 2px #fff, 
+text-shadow: 2px 2px #fff,
              3px 3px #666;
 ```
 ##First-letter-only shadow
 
 ![clipboard.png](http://segmentfault.com/img/bVkzuy)
 ```
-.text { 
-    text-shadow:0 0 5px; 
-} 
+.text {
+    text-shadow:0 0 5px;
+}
 
-.text::first-letter { 
-    color:azure; 
-    text-shadow:0 0 5px, 0 0px 6px 3px blue, 0 -2px 6px 6px cyan, 0 -4px 9px 9px lightblue ; 
+.text::first-letter {
+    color:azure;
+    text-shadow:0 0 5px, 0 0px 6px 3px blue, 0 -2px 6px 6px cyan, 0 -4px 9px 9px lightblue ;
 }
 ```
 

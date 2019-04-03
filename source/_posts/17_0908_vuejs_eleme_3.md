@@ -6,7 +6,7 @@ category: [Vue.js]
 tags: [JavaScript,HTML5,Vue.js]
 ---
 
-![Vue.js 2 高仿饿了么开发及解注三][1]
+<!-- ![Vue.js 2 高仿饿了么开发及解注三][1] -->
 
 <!--more-->
 
@@ -47,7 +47,7 @@ tags: [JavaScript,HTML5,Vue.js]
         &:last-child
           margin-right: 0 // 最后 一个星星没有margin-right
         &.on
-          // mixin.styl 里定义的 bg-image() 
+          // mixin.styl 里定义的 bg-image()
           bg-image('star48_on') // 全星
         &.half
           bg-image('star48_half')  // 半星

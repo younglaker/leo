@@ -6,7 +6,7 @@ category: [HTML5]
 tags: [JavaScript,HTML5,Canvas]
 ---
 
-![Canvas 清除不规则区域][1]
+<!-- ![Canvas 清除不规则区域][1] -->
 
 <!--more-->
 
@@ -16,13 +16,13 @@ tags: [JavaScript,HTML5,Canvas]
 
 
  默认 Canvas Api 只提供了清除矩形区域的接口 `clearRect()`，但有时候需要清除圆形或其他特殊形状的区域。比如我在开发 [pixeler](https://github.com/younglaker/pixeler) 擦除绘制的圆形，刚开始是用 `clearRect()`， 设置大于圆形直径的正方形来擦除，后来想，能不能直接擦除圆形区域。
- 
+
  根据 [Stack Overflow][2] 的回答和 [Mozilla 的文档][3]，`ctx.globalCompositeOperation` 提供了多种色彩合成模式，其中 `destination-out` 能够完成清除效果：
- 
+
  ![destination-out][4]
- 
+
  可以拓展 Canvas 接口：
- 
+
 ```
 CanvasRenderingContext2D.prototype.clearArc = function(x, y, radius, startAngle, endAngle, anticlockwise) {
     this.beginPath();
@@ -36,7 +36,7 @@ CanvasRenderingContext2D.prototype.clearArc = function(x, y, radius, startAngle,
 ```
 
  进一步，可以自定义各种路径：
- 
+
 ```
 CanvasRenderingContext2D.prototype.clear = function() {
     this.save();

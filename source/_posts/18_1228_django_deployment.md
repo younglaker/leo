@@ -6,7 +6,7 @@ category: [Python]
 tags: [Server,Python,Django,MySql,Tencent Cloud]
 ---
 
-![Django Enviroment in Tencent Cloud Ubuntu][1]
+<!-- ![Django Enviroment in Tencent Cloud Ubuntu][1] -->
 
 <!--more-->
 

@@ -5,7 +5,7 @@ date:   2015-03-15 08:24:00
 category: "JavaScript"
 ---
 
-![clipboard.png](http://segmentfault.com/img/bVkvoJ)
+<!-- ![clipboard.png](http://segmentfault.com/img/bVkvoJ) -->
 
 
 ## 前言
@@ -23,12 +23,12 @@ category: "JavaScript"
 
     (function() {
 		// 创建一个全局变量"window.O"
-        window.O = Oct = function(selector, root_id, tag) { 
-			return new Octobj(selector, root_id, tag); 
-		}; 
+        window.O = Oct = function(selector, root_id, tag) {
+			return new Octobj(selector, root_id, tag);
+		};
 
         // 帅气地定义一个版本
-        Oct.version = "1.0"; 
+        Oct.version = "1.0";
 
     })();
 
@@ -40,7 +40,7 @@ JQ的流行，我想是因为它很方便吧，一个选择器就可以接着写
 ## 选择器
 选择器非常重要。JQ特别把选择器部分剥离出一个库sizzle.js。现在的JQ内部也是调用JQ里面的sizzle。“选择器”三个字写得简单，代码写起来就很有学问，sizzle.js这种高大上的我就不说了。我这里简单实现一些功能：选择class/id/标签。
 
-首先，把上面的Octobj对象骨架搭建起来。包含selector, root_id, tag三个参数。selector就是你想要找的东西，root_id是你想要找的东西的上级的id，tag是你要指定返回某种标签。 
+首先，把上面的Octobj对象骨架搭建起来。包含selector, root_id, tag三个参数。selector就是你想要找的东西，root_id是你想要找的东西的上级的id，tag是你要指定返回某种标签。
 
     var Octobj = function(selector, root_id, tag) {
 
@@ -48,13 +48,13 @@ JQ的流行，我想是因为它很方便吧，一个选择器就可以接着写
 
 定义一些参数
 
-    // args: 存储root_id的子标签 
+    // args: 存储root_id的子标签
     // type: 类型标记，id("#"), class(".") 或者 tag("&。 tag也加标记是为了代码方便
     // eles: 临时的，存储`selector`变量里"# . &"标记后面的字符串
     // selector_exp: 用来匹配标签的正则规则
-    var agrs, type, eles; 
-    var selector_exp = /^(?:#(\w-_)+|\.(\w-_)+|(\w)+)$/; 
-    
+    var agrs, type, eles;
+    var selector_exp = /^(?:#(\w-_)+|\.(\w-_)+|(\w)+)$/;
+
     // this.elements: 存储函数结束后返回对象
     this.elements = [];
 
@@ -78,7 +78,7 @@ JQ的流行，我想是因为它很方便吧，一个选择器就可以接着写
 进入核心部分。分两种情况，能支持`querySelector()`方法的“高级”浏览器和不能支持的“低端”浏览器。先是能支持querySelector的，就很简单了：
 
     if (document.querySelectorAll) {
-        // 因为我用'&'符号来标记标签 ，所以要用"replace()"去掉'&' 
+        // 因为我用'&'符号来标记标签 ，所以要用"replace()"去掉'&'
         var node_list = document.querySelectorAll(selector.replace("&", ""))
         for (var i in node_list) {
             if (node_list[i].tagName !== undefined) {
@@ -95,12 +95,12 @@ JQ的流行，我想是因为它很方便吧，一个选择器就可以接着写
 
     // 如果不指明 "root_id" 和 "tag", "args" 就存储所有的标签
     args = root_id.getElementsByTagName(tag);
-    
+
     // 通过符号标记判断是class/id/tag
     type = selector[0].charAt(0);
-    
+
     // 所要选取的目标的字符串
-    eles = selector[0].slice(1);  
+    eles = selector[0].slice(1);
 
 处理选择class的情况。有文章指出for in的效率不高，我本来是用for处理的，但是出现问题，因为会把方法一起选进来。JQ用了for in，感觉有了标杆，我就全部改用for in了。
 
@@ -134,7 +134,7 @@ JQ的流行，我想是因为它很方便吧，一个选择器就可以接着写
             }
         }
     }
-    
+
 处理选择标签的情况：
 
     else if (type === "&") {
@@ -154,7 +154,7 @@ JQ的流行，我想是因为它很方便吧，一个选择器就可以接着写
 基础选择器部分完成了，别忘了最后一句，返回找到的元素，给下一个方法进行操作：
 
     return this;
-    
+
 [全部代码][4]
 
 ## 用法举例
@@ -177,7 +177,7 @@ JQ的流行，我想是因为它很方便吧，一个选择器就可以接着写
 
 5.选择#dad下的.buddy
 
-    O(".buddy", "#dad")   
+    O(".buddy", "#dad")
 
 
 

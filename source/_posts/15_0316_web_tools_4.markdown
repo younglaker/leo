@@ -10,7 +10,7 @@ Hubspot 公司有3个很好的JavaScript库。 它们的使用方法都简单、
 
 Pace 是用于快速创建进度条的库，它有很多的进度条的表现方式，一定有一款适合你。
 
-![clipboard.png](http://segmentfault.com/img/bVk4ny)
+<!-- ![clipboard.png](http://segmentfault.com/img/bVk4ny) -->
 
 <!--more-->
 
@@ -59,7 +59,7 @@ Flat UI Free是由一个很受欢迎的设计师资源网 Messenger  开发的
 简单好用的创建响应式标签的jQuery插件。 你要做的是给指定元素添加`data-respond`属性和`.gt .lt `类，就像`min-width`、`max-width`。
 
     .quote.lt500 {background: blue}
-    
+
     .quote.gt150.lt300 {background: red} /* min
 
 ## [Trunk][10]

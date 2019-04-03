@@ -6,7 +6,7 @@ category: [Hexo]
 tags: [Hexo]
 ---
 
-![Hexo server not working][1]
+<!-- ![Hexo server not working][1] -->
 
 <!--more-->
 

@@ -5,7 +5,7 @@ date:   2017-06-28 08:24:00
 category: [Others]
 ---
 
-![领取恒星币XLM Lumen][1]
+<!-- ![领取恒星币XLM Lumen][1] -->
 
 <!--more-->
 

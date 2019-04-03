@@ -6,7 +6,7 @@ category: [Vue.js]
 tags: [JavaScript,HTML5,Vue.js]
 ---
 
-![Vue.js 2 高仿饿了么开发及解注六][1]
+<!-- ![Vue.js 2 高仿饿了么开发及解注六][1] -->
 
 <!--more-->
 
@@ -50,12 +50,12 @@ import cartcontrol from 'components/cartcontrol/cartcontrol'
       <h1 class="title">购物车</h1>
       <span class="empty" @click="empty">清空</span>
     </div>
-    
+
     <!-- 购物清单 -->
     <!-- 定义了 ref="listContent"，可以传入BS插件，滑动购物清单 -->
     <div class="list-content" ref="listContent">
       <ul>
-      
+
         <!-- 展示加进购物车的食品、数量、价钱 -->
         <!-- goods组件传进来的selectFoods -->
         <li class="food" v-for="food in selectFoods">
@@ -63,7 +63,7 @@ import cartcontrol from 'components/cartcontrol/cartcontrol'
           <div class="price">
             <span>￥{{food.price*food.count}}</span>
           </div
-          
+
           <div class="cartcontrol-wrapper">
             <!-- “添减食品” 组件 -->
             <!-- 传入当前 food -->
@@ -83,7 +83,7 @@ import cartcontrol from 'components/cartcontrol/cartcontrol'
 data () {
   return {
     ...
-    fold: true 
+    fold: true
   }
 },
 ```
@@ -194,7 +194,7 @@ computed: {
       return '去结算'
     }
   },
-  
+
   /* 付款按钮的CSS类 */
   payClass () {
     if (this.totalPrice < this.minPrice) {

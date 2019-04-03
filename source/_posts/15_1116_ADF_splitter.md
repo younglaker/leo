@@ -6,11 +6,15 @@ category: [Java,ADF]
 tags: [Java,ADF,JDeveloper]
 ---
 
-##效果
+ADF/JDeveloper—两栏布局、折叠菜单
+
+<!--more-->
+
+## 效果
 
 ![部门信息][1]
 
-<!--more-->
+
 
 ![员工信息][2]
 
@@ -59,7 +63,7 @@ To 处选择刚刚创建的 Bean 的 taskFlowId
 
 ![taskFlowId][12]
 
-Type 选择 Action 
+Type 选择 Action
 
 ![Action][13]
 

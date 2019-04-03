@@ -5,7 +5,7 @@ date:   2016-03-04 08:24:00
 category: [Ajax]
 tags: [HTML5,Ajax]
 ---
-![HTML5+Ajax上传文件][1]
+<!-- ![HTML5+Ajax上传文件][1] -->
 
 <!--more-->
 

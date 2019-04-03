@@ -13,7 +13,7 @@ category: [翻译,HTML5]
 
 今天做些不一样的东西（如 MeshBasicMaterial，MeshLambertMaterial 和 MeshPhongMaterial），尽量使用各种参数（color，opacity，ambient，emissive，specular），讲解如何制作纹理和凹凸映射的使用。
 
-![clipboard.png](http://segmentfault.com/img/bVkwm1)
+<!-- ![clipboard.png](http://segmentfault.com/img/bVkwm1) -->
 
 **[Live Demo](http://www.script-tutorials.com/demos/385/index.html "WebGL With Three.js - Lesson 2 - demo")**
 

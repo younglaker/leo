@@ -8,7 +8,7 @@ category: [翻译,Tools]
 
 ## [Webflow][1]
 
-![clipboard.png](http://segmentfault.com/img/bVk2Cu)
+<!-- ![clipboard.png](http://segmentfault.com/img/bVk2Cu) -->
 
 通过这些服务，一个没有HTML/CSS知识的人，就能在[55分钟][2]内搭建一个跨浏览器的页面。 这是为网页设计师准备的完美解决方案，已经有超过26 000人在使用Webflow。 只能免费创建两个项目，想要创建更多项目的收费也很合理。 这个工具真的很酷。
 
@@ -25,16 +25,16 @@ category: [翻译,Tools]
 可以给所有的元素应用视觉差效果，通过设置`data-depth`控制速度。 Parallax.js有一系列的参数：
 
     <ul id="scene"
-      data-calibrate-x="false" 
-      data-calibrate-y="true"  
-      data-invert-x="false"     
-      data-invert-y="true"  
+      data-calibrate-x="false"
+      data-calibrate-y="true"
+      data-invert-x="false"
+      data-invert-y="true"
       data-limit-x="false"
       data-limit-y="10"
       data-scalar-x="2"
       data-scalar-y="8"
       data-friction-x="0.2"
-      data-friction-y="0.8"> 
+      data-friction-y="0.8">
       <li class="layer" data-depth="0.00"><img src="layer6.png"></li>
       <li class="layer" data-depth="0.20"><img src="layer5.png"></li>
       <li class="layer" data-depth="0.40"><img src="layer4.png"></li>
@@ -77,13 +77,13 @@ GistBox能同步你的Github 的 Gist。 可以通过标签排序，管理方�
 
     <section class="semantic-content" id="modal-text" tabindex="-1"
             role="dialog" aria-labelledby="modal-label" aria-hidden="true">
-    
+
         <div class="modal-inner">
             <header id="modal-label"><!-- Header --></header>
             <div class="modal-content"><!-- The modals content --></div>
             <footer><!-- Footer --></footer>
         </div>
-    
+
         <a href="#!" class="modal-close" title="Close this modal" data-close="Close"
             data-dismiss="modal">×</a>
     </section>

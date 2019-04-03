@@ -6,7 +6,7 @@ category: [HTML5]
 tags: [JavaScript,HTML5,Canvas]
 ---
 
- ![EasyCanvas绘图库实践][1]
+ <!-- ![EasyCanvas绘图库实践][1] -->
 
 <!--more-->
 

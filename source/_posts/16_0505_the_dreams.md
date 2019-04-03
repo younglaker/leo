@@ -7,7 +7,7 @@ tags: [图饭]
 ---
 
 
-![那时候的梦想，你还在坚持吗？](http://77g54f.com1.z0.glb.clouddn.com/essay508286.jpg)
+<!-- ![那时候的梦想，你还在坚持吗？](http://77g54f.com1.z0.glb.clouddn.com/essay508286.jpg) -->
 
 <!--more-->
 

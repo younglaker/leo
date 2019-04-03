@@ -8,7 +8,7 @@ category: [翻译,Tools]
 
 ## [Cloudconvert][1]
 
-![clipboard.png](http://segmentfault.com/img/bVk27X)
+<!-- ![clipboard.png](http://segmentfault.com/img/bVk27X) -->
 
 出色的在线转换器，支持超过150种格式，支持音频、CAD、文档、电子书、图像、表格、演示文稿、视频文件。 与Dropbox和 Google Drive同步，适用于所有智能手机。 最棒的是，它提供功能强大但使用简单的API。
 
@@ -36,7 +36,7 @@ Munee 是一个功能强大的PHP库，能编译 LESS、 SCSS、CoffeeScript，�
 
 ![clipboard.png](http://segmentfault.com/img/bVk28G)
 
-现在可以通过  [Effeckt.css][10] 和 [Animate.css][11] 轻易的操作CSS动画。 Animo.js是个智能库（大小只有7KB），能方便的制作CSS动画 (animate+animo.css) ，还增加了跨浏览器的模糊效果。 配合 jQuery 2 能更好的使用。 
+现在可以通过  [Effeckt.css][10] 和 [Animate.css][11] 轻易的操作CSS动画。 Animo.js是个智能库（大小只有7KB），能方便的制作CSS动画 (animate+animo.css) ，还增加了跨浏览器的模糊效果。 配合 jQuery 2 能更好的使用。
 
 语法很简单：
 
@@ -86,28 +86,28 @@ Basiliq是拥有者大量UI元素的线框图工具，用于创建桌面或移�
       url: "http://jordanscales.com"
     output: basic.html
     controls: true
-    
+
     --
-    
+
     # Cleaver 101
     ## A first look at quick HTML presentations
-    
+
     --
-    
+
     ### A textual example
-    
+
     Content can be written in **Markdown!** New lines no longer need two angle brackets.
-    
+
     This will be in a separate paragraph
-    
+
     --
-    
+
     ### A list of things
-    
+
     * Item 1
     * Item B
     * Item gamma
-    
+
     No need for multiple templates!
 
 而最后我们会得到[这样的介绍][16]。

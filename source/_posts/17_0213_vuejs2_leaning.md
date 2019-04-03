@@ -6,7 +6,7 @@ category: [Vue.js]
 tags: [Vue.js,JavaScript]
 ---
 
-![title][1]
+<!-- ![title][1] -->
 
 <!--more-->
 

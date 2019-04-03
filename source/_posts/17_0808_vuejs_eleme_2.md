@@ -6,7 +6,7 @@ category: [Vue.js]
 tags: [JavaScript,HTML5,Vue.js]
 ---
 
-![Vue.js 2 高仿饿了么开发及解注二][1]
+<!-- ![Vue.js 2 高仿饿了么开发及解注二][1] -->
 
 <!--more-->
 
