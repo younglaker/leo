@@ -6,15 +6,12 @@ category: [Server]
 tags: [Server,PHP,Tencent Cloud]
 ---
 
-![Tencent Cloud and Baota Panel](http://wx4.sinaimg.cn/large/6d184cefly1fx7m4l3l8sj20p0046wf0.jpg)
+<!-- ![Tencent Cloud and Baota Panel](http://wx4.sinaimg.cn/large/6d184cefly1fx7m4l3l8sj20p0046wf0.jpg) -->
 
-<!--more-->
-
-> Exchange blogroll： [laker.me]( http://laker.me/blog )
-> Github：[https://github.com/younglaker]( https://github.com/younglaker )
 
 ## Install Baota Panel in Tencent Cloud
 
+<!--more-->
 Visit [https://www.bt.cn/][1]:
 
 ![bt website][2]
@@ -67,15 +64,18 @@ Save and visit:
 ![visit][12]
 
 
+> Exchange blogroll： [laker.me]( http://laker.me/blog )
+> Github：[https://github.com/younglaker]( https://github.com/younglaker )
+
   [1]: https://www.bt.cn/
-  [2]: http://wx3.sinaimg.cn/mw690/6d184cefly1fx6o8b5ehnj21ac0ngagg.jpg
-  [3]: http://wx2.sinaimg.cn/mw690/6d184cefly1fx6o8jm2wlj21ds0bqn0t.jpg
-  [4]: http://wx2.sinaimg.cn/mw690/6d184cefly1fx7k4mtsmvj21k40ncdp9.jpg
-  [5]: http://wx4.sinaimg.cn/large/6d184cefly1fx6o938vr1j21go086wgg.jpg
-  [6]: http://wx2.sinaimg.cn/mw690/6d184cefly1fx6o9h3n7vj20n608sq46.jpg
-  [7]: http://wx1.sinaimg.cn/mw690/6d184cefly1fx6o9z91xpj212g0gmgok.jpg
-  [8]: http://wx1.sinaimg.cn/mw690/6d184cefly1fx6oai0mvzj21100i2n01.jpg
-  [9]: http://wx1.sinaimg.cn/mw690/6d184cefly1fx6oape3hej215g0uq78v.jpg
-  [10]: http://wx1.sinaimg.cn/mw690/6d184cefly1fx6oayqr3fj20ru01ugly.jpg
-  [11]: http://wx1.sinaimg.cn/mw690/6d184cefly1fx6ob3u08qj20z00l843a.jpg
-  [12]: http://wx4.sinaimg.cn/mw690/6d184cefly1fx6ocgwlzij20ue0ky419.jpg
+  [2]: https://raw.githubusercontent.com/aomine-sama/px/master/2018/18111301.jpg
+  [3]: https://raw.githubusercontent.com/aomine-sama/px/master/2018/18111302.jpg
+  [4]: https://raw.githubusercontent.com/aomine-sama/px/master/2018/18111303.jpg
+  [5]: https://raw.githubusercontent.com/aomine-sama/px/master/2018/18111304.jpg
+  [6]: https://raw.githubusercontent.com/aomine-sama/px/master/2018/18111305.jpg
+  [7]: https://raw.githubusercontent.com/aomine-sama/px/master/2018/18111306.jpg
+  [8]: https://raw.githubusercontent.com/aomine-sama/px/master/2018/18111307.jpg
+  [9]: https://raw.githubusercontent.com/aomine-sama/px/master/2018/18111308.jpg
+  [10]: https://raw.githubusercontent.com/aomine-sama/px/master/2018/18111309.jpg
+  [11]: https://raw.githubusercontent.com/aomine-sama/px/master/2018/18111310.jpg
+  [12]: https://raw.githubusercontent.com/aomine-sama/px/master/2018/18111311.jpg

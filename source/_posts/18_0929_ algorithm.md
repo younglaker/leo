@@ -6,17 +6,14 @@ category: [算法]
 tags: [算法]
 ---
 
-![算法学习：重新排序链表][1]
+<!-- ![算法学习：重新排序链表][1] -->
 
-<!--more-->
 
-> 欢迎交换友链： [laker.me--进击的程序媛]( http://laker.me/blog )
-> Github：[https://github.com/younglaker]( https://github.com/younglaker )
-> V信: lakerHQ （请注明‘来自博客’）
 
 ## 题目
 给定一个单链表，将链表按头节点、尾节点、第二个节点、 倒数第二个节点...的规律重建。要求：原地操作，不改变节点的值。
 
+<!--more-->
 
 ## 思路
 暴力法：先找头节点，再找尾节点，然后顺次第二个节点，倒数第二个节点，由于是单链表，不停的从表头遍历到表尾，时间复杂度O(n^2)
@@ -70,6 +67,9 @@ void Revert (Link L1) {
 
 ![图示][2]
 
+> 欢迎交换友链： [laker.me--进击的程序媛]( http://laker.me/blog )
+> Github：[https://github.com/younglaker]( https://github.com/younglaker )
+> V信: lakerHQ （请注明‘来自博客’）
 
   [1]: http://wx2.sinaimg.cn/large/6d184cefly1fvwi0uvwsmj20p0046gm8.jpg
-  [2]: http://wx4.sinaimg.cn/mw690/6d184cefly1fvwju0nqrvj20u0141ta3.jpg
+  [2]: https://raw.githubusercontent.com/aomine-sama/px/master/2018/18092901.jpg

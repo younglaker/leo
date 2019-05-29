@@ -16,7 +16,7 @@ There are two common problem when updating brew.
 
 When you run `brew doctor`, you can find there some permission problem with the `/usr/local/` files.
 
-![image](https://wx4.sinaimg.cn/mw690/6d184cefly1g2oamxl1c1j21po0rmhdt.jpg)
+![image](https://raw.githubusercontent.com/aomine-sama/px/master/common/19050301.jpg)
 
 You should change the permission, run this:
 

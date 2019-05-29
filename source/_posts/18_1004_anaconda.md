@@ -6,13 +6,8 @@ category: [AI]
 tags: [Algorithm,人工智能,AI,ML,DL]
 ---
 
-![AI 学习：Anaconda 配置][1]
+<!-- ![AI 学习：Anaconda 配置][1] -->
 
-<!--more-->
-
-> 欢迎交换友链： [laker.me--进击的程序媛]( http://laker.me/blog )
-> Github：[https://github.com/younglaker]( https://github.com/younglaker )
-> V信: lakerHQ （请注明‘来自博客’）
 
 ## 安装
 
@@ -20,6 +15,7 @@ tags: [Algorithm,人工智能,AI,ML,DL]
 
 目前Anaconda 出了 Python3.7 版本，但 TensorFlow 只支持3.5、3.6、2.7。有两种解决方案。
 
+<!--more-->
 - 方案一：
 
 安装3.7版，再根据官方推荐的方法安装3.5、3.6。
@@ -78,29 +74,29 @@ https://mirrors.tuna.tsinghua.edu.cn/anaconda/archive/
 安装后尝试如下命令
 
      conda --version
-    
+
 
 如果出现
 
     $ conda --version
     conda 4.3.30
-    
 
-表示安装成功，如果没有，则需配置环境变量  
+
+表示安装成功，如果没有，则需配置环境变量
 修改`.bash_profile` 或 `zsh_profile`，我用的 zsh
 
     vi ~/.zsh_profile
-    
+
 添加以下命令
 
     export PATH="/Users/nick(你自己的安装路径)/anaconda3/bin:$PATH"
-    
 
-vim使用`:wq`命令保存退出  
+
+vim使用`:wq`命令保存退出
 保存文件后如要立即生效，输入以下命令，
 
     source $HOME/.zsh_profile
-    
+
 > 注意：重启机子后也可能要执行这个
 
 再次测试`conda --version`命令是否安装成功.
@@ -109,7 +105,7 @@ vim使用`:wq`命令保存退出
 
     conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/free/
     conda config --set show_channel_urls yes
-    
+
 此时~/下会生成.condarc文件。
 
 用`vi ~/.condarc`命令进入vim编辑器，删除其中的第三、第四行，即删除了默认的源，然后`:wq`保存：
@@ -119,7 +115,7 @@ vim使用`:wq`命令保存退出
       - defaults #删除
     ssl_verify: true #删除
     show_channel_urls: true
-    
+
 `conda info` 查看当前配置信息，channel URLs只剩下清华的源
 
 ```
@@ -163,7 +159,7 @@ Collecting tensorflow
 
 ## 测试环境
 
-下载测试文件 
+下载测试文件
 链接:https://pan.baidu.com/s/1U_P1VsJyJ3Zn8SAprz9Sxw 提取码: vtaf
 
 安装测试文件的依赖库 pygame
@@ -195,13 +191,17 @@ Collecting tensorflow
 [Add PATH][10]
 
 
-  [1]: http://wx4.sinaimg.cn/large/6d184cefly1fvzxnkjnwij20p0046t97.jpg
+> 欢迎交换友链： [laker.me--进击的程序媛]( http://laker.me/blog )
+> Github：[https://github.com/younglaker]( https://github.com/younglaker )
+> V信: lakerHQ （请注明‘来自博客’）
+
+  [1]:https://raw.githubusercontent.com/aomine-sama/px/master/2018/18100401.jpg
   [2]: https://conda.io/docs/py2or3.html
   [3]: https://repo.anaconda.com/archive/
-  [4]: http://wx1.sinaimg.cn/mw690/6d184cefly1fvzuazc915j21jc0okgq7.jpg
-  [5]: http://wx2.sinaimg.cn/mw690/6d184cefly1fvzub9u6vrj20ck0ew754.jpg
-  [6]: http://wx3.sinaimg.cn/mw690/6d184cefly1fvzublo0fuj20hy0fgdgu.jpg
-  [7]: http://wx3.sinaimg.cn/mw690/6d184cefly1fvzuc8mo3lj214a0q8q6t.jpg
-  [8]: http://wx4.sinaimg.cn/mw690/6d184cefly1fvzudre5z8j21bs0fmhdt.jpg
+  [4]:https://raw.githubusercontent.com/aomine-sama/px/master/2018/18100402.jpg
+  [5]:https://raw.githubusercontent.com/aomine-sama/px/master/2018/18100403.jpg
+  [6]:https://raw.githubusercontent.com/aomine-sama/px/master/2018/18100404.jpg
+  [7]:https://raw.githubusercontent.com/aomine-sama/px/master/2018/18100405.jpg
+  [8]:https://raw.githubusercontent.com/aomine-sama/px/master/2018/18100406.jpg
   [9]: https://www.jianshu.com/p/b9eac8419c8d
   [10]: http://docs.anaconda.com/anaconda/faq/#should-i-add-anaconda-to-the-macos-or-linux-path

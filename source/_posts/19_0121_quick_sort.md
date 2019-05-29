@@ -6,15 +6,12 @@ category: [Algorithm]
 tags: [Algorithm,Python]
 ---
 
-![Django Enviroment in Tencent Cloud Ubuntu](http://wx2.sinaimg.cn/large/6d184cefly1fvwi0uvwsmj20p0046gm8.jpg)
+<!-- ![Django Enviroment in Tencent Cloud Ubuntu](http://wx2.sinaimg.cn/large/6d184cefly1fvwi0uvwsmj20p0046gm8.jpg) -->
 
-<!--more-->
-
-> Exchange blogroll： [http://laker.me/blog]( http://laker.me/blog )
-> Github：[https://github.com/younglaker]( https://github.com/younglaker )
 
 There are tow method to set pivot.The easy way is setting the first item as pivot, and the other way is setting the middle item as pivot.
 
+<!--more-->
 The first way is more easy to understand and write code.
 The second way is a little better than the first one when the list is mostly ordered, it can seperate the smaller and bigger items to two sides, but in first way , one side may has all items and the other side has no item.
 
@@ -79,7 +76,7 @@ if __name__ == "__main__":
 
 Take a example:
 
-![example](https://ws3.sinaimg.cn/mw690/6d184cefly1fyfxtd5g6lj21jg25cnmx.jpg)
+![example](https://raw.githubusercontent.com/aomine-sama/px/master/common/19012201.jpg)
 
 
 ## Method two
@@ -137,4 +134,7 @@ print(a)
 
 Take a example:
 
-![example](https://wx3.sinaimg.cn/mw690/6d184cefly1fyfxj2g1pdj21lg27ye81.jpg)
+![example](https://raw.githubusercontent.com/aomine-sama/px/master/common/19012202.jpg)
+
+> Exchange blogroll： [http://laker.me/blog]( http://laker.me/blog )
+> Github：[https://github.com/younglaker]( https://github.com/younglaker )

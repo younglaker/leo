@@ -6,12 +6,8 @@ category: [Python]
 tags: [Server,Python,Django,MySql,Tencent Cloud]
 ---
 
-![Django Enviroment in Tencent Cloud Ubuntu][1]
+<!-- ![Django Enviroment in Tencent Cloud Ubuntu][1] -->
 
-<!--more-->
-
-> Exchange blogroll： [http://laker.me/blog]( http://laker.me/blog )
-> Github：[https://github.com/younglaker]( https://github.com/younglaker )
 
 
 ## Enviroment:
@@ -21,6 +17,7 @@ tags: [Server,Python,Django,MySql,Tencent Cloud]
 - Python 3.6
 - Django 2.0
 
+<!--more-->
 ## Connect to server
 
 
@@ -106,7 +103,7 @@ Save and quit vim:
 
 Open port 8080 in Baota Panel:
 
-![Open port 808](https://wx1.sinaimg.cn/mw690/6d184cefly1fyml7c32q7j20ym0aajt1.jpg)
+![Open port 808](https://raw.githubusercontent.com/aomine-sama/px/master/2018/18122802.jpg)
 
 
 Or set in Tencent Cloud:
@@ -128,10 +125,13 @@ Reference:
 [ubuntu + nginx + uwsgi + django(python3)][5]
 [python3+Django][6]
 
+> Exchange blogroll： [http://laker.me/blog]( http://laker.me/blog )
+> Github：[https://github.com/younglaker]( https://github.com/younglaker )
+
 
   [1]: http://wx4.sinaimg.cn/large/6d184cefly1fxvvjn56zij20p004675r.jpg
-  [2]: http://wx1.sinaimg.cn/mw690/6d184cefly1fxvvjsd9nsj20qp0pcgqz.jpg
-  [3]: http://wx2.sinaimg.cn/mw690/6d184cefly1fxvvdovl3oj21080ikade.jpg
-  [4]: http://wx4.sinaimg.cn/mw690/6d184cefly1fxvvdvmaklj216o0qqdie.jpg
+  [2]: https://raw.githubusercontent.com/aomine-sama/px/master/2018/18122801.jpg
+  [3]: https://raw.githubusercontent.com/aomine-sama/px/master/2018/18122803.jpg
+  [4]: https://raw.githubusercontent.com/aomine-sama/px/master/2018/18122804.jpg
   [5]: https://www.bt.cn/bbs/thread-8889-1-3.html
   [6]: https://www.cnblogs.com/dalanjing/p/8636338.html

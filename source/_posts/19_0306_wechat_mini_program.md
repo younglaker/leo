@@ -6,18 +6,15 @@ category: [HTML5]
 tags: [HTML5,Front-end,Wechat]
 ---
 
-![Wechat mini program](https://wx2.sinaimg.cn/large/6d184cefly1g0u0mf6a9pj20p00463yw.jpg)
+<!-- ![Wechat mini program](https://wx2.sinaimg.cn/large/6d184cefly1g0u0mf6a9pj20p00463yw.jpg) -->
 
-<!--more-->
-
-> Exchange blogroll： [http://laker.me/blog]( http://laker.me/blog )
-> Github：[https://github.com/younglaker]( https://github.com/younglaker )
 
 ## 1. Register an account
 
 Register:
 https://mp.weixin.qq.com/cgi-bin/wx
 
+<!--more-->
 
 After register, login in and get AppID to login develop tool.
 
@@ -294,3 +291,5 @@ Bind redirect function:
     });
   }
 ```
+> Exchange blogroll： [http://laker.me/blog]( http://laker.me/blog )
+> Github：[https://github.com/younglaker]( https://github.com/younglaker )
