@@ -80,7 +80,7 @@ deploy:
 menu:
   Home: /
   Archives: archives
-  Projects: projects
+  # Projects: projects
   About: about
   Categories: categories
   #Tags: tags
