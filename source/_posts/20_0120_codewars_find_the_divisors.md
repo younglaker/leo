@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Algorithm - find_the_divisors
+title: Algorithm - Find the divisors
 date: 2020-01-20 08:24:00
 category: [Algorithm]
 tags: [Algorithm, CodeWars]
